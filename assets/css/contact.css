@@ -1,0 +1,154 @@
+/**========================
+ * CONTACT SECTION STYLES
+ ========================*/
+.contact {
+    padding: 8rem 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--white);
+}
+
+/**=================
+ * HERO STYLES
+ =================*/
+.contact__hero {
+    height: 75vh;
+}
+
+.contact__hero.hero::before {
+    animation: none;
+    background: url('/assets/img/contact.webp') center/cover;
+}
+
+/*========== Background Shapes ==========*/
+.contact__shapes .shape {
+    z-index: 0;
+    opacity: 0.1;
+    position: absolute;
+    filter: blur(60px);
+    border-radius: 50px;
+    background: var(--gradient);
+}
+
+.shape-1 {
+    top: -100px;
+    width: 400px;
+    right: -100px;
+    height: 400px;
+    transform: rotate(-45deg);
+}
+
+.shape-2 {
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    transform: rotate(30deg);
+}
+
+.shape-3 {
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+}
+
+/*========== Contact Content ==========*/
+.contact__content {
+    gap: 4rem;
+    z-index: 1;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1.2fr;
+}
+
+/*========== Contact Info ==========*/
+.section__title.left {
+    text-align: left;
+}
+
+.contact__details {
+    gap: 2rem;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.contact__item {
+    gap: 1.5rem;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.contact__item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.item__icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    border-radius: 12px;
+    color: var(--white);
+    justify-content: center;
+    background: var(--gradient);
+}
+
+.item__content h4 {
+    color: var(--gray-800);
+    margin-bottom: 0.25rem;
+}
+
+.item__content p {
+    color: var(--gray-600);
+}
+
+/*========== Contact Form ==========*/
+.contact__form {
+    padding: 3rem;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.form__header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form__header h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/**====================
+ * BREAKPOINT STYLES
+ ====================*/
+@media (max-width: 992px) {
+    .contact__content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__form {
+        padding: 2rem;
+    }
+}
+
+/**===============
+ * FOOTER STYLES
+ ===============*/
+.contact__footer {
+    border-radius: 40px 40px 0 0;
+}

@@ -1,0 +1,552 @@
+/**===============
+ * CSS VARIABLES
+ ===============*/
+:root {
+    /*=== Core Colors ===*/
+    --background: #0f172a;
+}
+
+/**=====================
+ * HERO SECTION STYLES
+ =====================*/
+.about__hero {
+    height: 90vh;
+}
+
+.about__hero.hero::before {
+    animation: none;
+    background: url('/assets/img/about2.jpg') center/cover;
+}
+
+.about__hero .hero__text {
+    text-align: left;
+}
+
+/**=========================
+ * VISION & MISSION STYLES
+ =========================*/
+.vision__mission {
+    padding: 8rem 0;
+    position: relative;
+    background: var(--white);
+}
+
+/*========== Vision Styles ==========*/
+.vision__content {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    margin-bottom: 4rem;
+    background: var(--primary-dark);
+}
+
+.vision__overlay {
+    inset: 0;
+    opacity: 0.4;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    background: url('/assets/img/vision3.jpg') center/cover;
+}
+
+.vision__content:hover .vision__overlay {
+    opacity: 0.3;
+}
+
+.vision__info {
+    z-index: 1;
+    padding: 4rem;
+    max-width: 700px;
+    position: relative;
+    color: var(--white);
+}
+
+.section__subtitle {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+.vision__info h2 {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+}
+
+.vision__info p {
+    opacity: 0.9;
+    line-height: 1.8;
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+}
+
+/*========== Mission Cards ==========*/
+.mission__cards {
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mission__card {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card__overlay {
+    inset: 0;
+    opacity: 0.8;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.mission__card:nth-child(1) .card__overlay {
+    background-image: url('/assets/img/mission.jpg');
+}
+
+.mission__card:nth-child(2) .card__overlay {
+    background-image: url('/assets/img/mission2.jpg');
+}
+
+.mission__card:nth-child(3) .card__overlay {
+    background-image: url('/assets/img/promise.jpg');
+}
+
+.mission__card:hover {
+    transform: translateY(-10px);
+}
+
+.mission__card:hover .card__overlay {
+    transform: scale(1.1);
+}
+
+.card__content {
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    padding: 2.5rem;
+    position: relative;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.7) 40%,
+            transparent 100%);
+}
+
+.card__icon {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mission__card:hover .card__icon {
+    transform: scale(1.1);
+}
+
+.card__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card__content p {
+    opacity: 0.9;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/**=====================
+ * RESPONSIVE STYLES
+ =====================*/
+@media (max-width: 1200px) {
+    .vision__mission {
+        padding: 6rem 0;
+    }
+
+    .vision__content {
+        height: 350px;
+    }
+
+    .vision__info {
+        padding: 3rem;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about__hero {
+        height: auto;
+        min-height: 500px;
+        padding: 120px 0 4rem;
+    }
+
+    .mission__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__content {
+        padding: 2.25rem;
+    }
+
+    .card__content h3 {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__hero {
+        min-height: 450px;
+    }
+
+    .about__hero .hero__text {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .vision__content {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .vision__info {
+        padding: 2.5rem 2rem;
+    }
+
+    .mission__cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mission__card {
+        height: 300px;
+    }
+
+    .card__icon {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__hero {
+        min-height: 400px;
+        padding: 100px 0 3rem;
+    }
+
+    .about__hero .hero__text {
+        padding: 0 0.5rem;
+    }
+
+    .about__hero .hero__text p {
+        margin-bottom: 1.5rem;
+    }
+
+    .vision__mission {
+        padding: 4rem 0;
+    }
+
+    .vision__content {
+        min-height: 280px;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
+    }
+
+    .vision__info {
+        padding: 2rem 1.5rem;
+    }
+
+    .mission__card {
+        height: 280px;
+    }
+
+    .card__content {
+        padding: 1.75rem;
+    }
+
+    .card__icon {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card__content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .card__content p {
+        line-height: 1.5;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .about__hero {
+        min-height: 380px;
+        padding: 90px 0 2.5rem;
+    }
+
+    .about__hero .hero__text h1 {
+        margin-bottom: 1rem;
+    }
+
+    .vision__content {
+        min-height: 260px;
+        margin-bottom: 2rem;
+    }
+
+    .vision__info {
+        padding: 1.5rem;
+    }
+
+    .card__content {
+        padding: 1.5rem;
+    }
+
+    .mission__card {
+        height: 260px;
+    }
+
+    .mission__cards {
+        gap: 1rem;
+    }
+}
+
+/**=======================
+* VALUES SECTION STYLES
+=======================*/
+.values {
+    padding: 8rem 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--background);
+}
+
+.values::before {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    background: url('/assets/img/ethics.jpg') center/cover fixed;
+}
+
+.values .section__title h2 {
+    color: var(--primary);
+}
+
+.values .section__title p {
+    color: var(--white);
+}
+
+.values__container {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.value__card {
+    z-index: 1;
+    text-align: left;
+    position: relative;
+    border-radius: 20px;
+    padding: 3rem 3rem 0;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    border: 1px solid var(--gray-200);
+    background: rgba(255, 255, 255, 0.104);
+}
+
+.value__bg {
+    inset: 0;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background: var(--gradient);
+    transition: var(--transition);
+}
+
+.value__icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background: var(--gradient);
+    transition: var(--transition);
+}
+
+.value__icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.value__card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.value__card p {
+    color: var(--gray-200);
+    transition: var(--transition);
+}
+
+.value__card:hover {
+    border-color: transparent;
+    transform: translateY(-10px);
+}
+
+.value__card:hover .value__bg {
+    opacity: 1;
+}
+
+.value__card:hover .value__icon,
+.value__card:hover h3,
+.value__card:hover p {
+    color: var(--white);
+}
+
+.value__card:hover .value__icon {
+    transform: rotateY(180deg);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/**===========================
+* CLIENT EXPERIENCE STYLES
+===========================*/
+.experience {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.experience__grid {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+}
+
+.experience__card {
+    padding: 2rem;
+    border-radius: 20px;
+    background: var(--white);
+    transition: var(--transition);
+    border: 1px solid var(--gray-200);
+}
+
+.experience__card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card__header {
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient);
+    transition: var(--transition);
+}
+
+.card__icon i {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.experience__card:hover .card__icon {
+    transform: rotate(-5deg);
+}
+
+.card__header h3 {
+    font-size: 1.2rem;
+    color: var(--gray-800);
+}
+
+.experience__card p {
+    color: var(--gray-600);
+}
+
+/**====================
+* BREAKPOINT STYLES
+====================*/
+@media (max-width: 1024px) {
+    .metrics__grid {
+        gap: 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    .metrics__stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .benefits__card,
+    .experience__card {
+        padding: 2rem;
+    }
+
+    .metrics__stats {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .metric__item {
+        gap: 1rem;
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+
+    .metric__number {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .benefits__icon i {
+        font-size: 1.5rem;
+    }
+
+    .benefits__card,
+    .experience__card {
+        padding: 1.5rem;
+    }
+
+    .card__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card__icon i {
+        font-size: 1rem;
+    }
+
+    .metric__number {
+        font-size: 2rem;
+    }
+}

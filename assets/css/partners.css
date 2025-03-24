@@ -1,0 +1,181 @@
+/**=====================
+ * HERO SECTION STYLES
+ =====================*/
+.partners__hero {
+    height: 80vh;
+}
+
+.partners__hero.hero::before {
+    animation: none;
+    background: url('/assets/img/partners-bg.jpg') center/cover;
+}
+
+/**=========================
+* PARTNERS SECTION STYLES
+=========================*/
+.industries {
+    padding: 8rem 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--white);
+}
+
+.industries__grid {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.industry__card {
+    overflow: hidden;
+    min-height: 350px;
+    position: relative;
+    border-radius: 0 20px;
+    transition: var(--transition);
+}
+
+.card__overlay {
+    inset: 0;
+    opacity: 0.95;
+    position: absolute;
+    background: var(--gradient);
+    transition: var(--transition);
+}
+
+.card__content {
+    z-index: 2;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    position: relative;
+    color: var(--white);
+    flex-direction: column;
+}
+
+.card__icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card__icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.industry__card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.industry__card:hover .card__icon {
+    transform: scale(1.1) rotate(-5deg);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.card__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card__content ul {
+    list-style: none;
+    margin-top: auto;
+}
+
+.card__content li {
+    gap: 1rem;
+    opacity: 0.9;
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.card__content li i {
+    font-size: 1rem;
+}
+
+/*========== Add unique gradients for each card ==========*/
+.industry__card:nth-child(1) .card__overlay {
+    background: linear-gradient(135deg, #004AAD 0%, #0066FF 100%);
+}
+
+.industry__card:nth-child(2) .card__overlay {
+    background: linear-gradient(135deg, #0066FF 0%, #00A3FF 100%);
+}
+
+.industry__card:nth-child(3) .card__overlay {
+    background: linear-gradient(135deg, #00A3FF 0%, #0066FF 100%);
+}
+
+.industry__card:nth-child(4) .card__overlay {
+    background: linear-gradient(135deg, #0066FF 0%, #004AAD 100%);
+}
+
+.industry__card:nth-child(5) .card__overlay {
+    background: linear-gradient(135deg, #004AAD 0%, #00A3FF 100%);
+}
+
+.industry__card:nth-child(6) .card__overlay {
+    background: linear-gradient(135deg, #00A3FF 0%, #004AAD 100%);
+}
+
+/**====================
+* BREAKPOINT STYLES
+====================*/
+@media (max-width: 1200px) {
+    .industries__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .industries {
+        padding: 4rem 0;
+    }
+
+    .industries__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industry__card {
+        min-height: 300px;
+    }
+
+    .card__content {
+        padding: 2rem;
+    }
+
+    .card__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card__icon i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content {
+        padding: 1.5rem;
+    }
+
+    .card__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card__icon i {
+        font-size: 1.25rem;
+    }
+
+    .card__content h3 {
+        font-size: 1.25rem;
+    }
+}

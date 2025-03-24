@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aftermath Marketing | Blog</title>
+
+    <!--==================== Favicon ====================-->
+    <link href="./assets/img/logo.jpg" rel="icon" />
+    <!--==================== End of Favicon ====================-->
+
+    <!--==================== Icons Link ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--==================== End of Icons Link ====================-->
+
+    <!--==================== Animate On Scroll Link ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!--==================== End of Animate On Scroll Link ====================-->
+
+    <!--==================== StyleSheet Link ====================-->
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/main2.css" />
+    <!--==================== End of StyleSheet Link ====================-->
+
+    <!--==================== Google tag (gtag.js) ====================-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-16Q8BKGHTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-16Q8BKGHTH");
+    </script>
+    <!--==================== End of Google tag (gtag.js) ====================-->
+  </head>
+  <body>
+    <!--==================== Navigation Bar ====================-->
+    <nav class="navbar">
+      <div class="container navbar__container flex__center">
+        <a href="./index.html" class="navbar__logo-link">
+          <img
+            class="navbar__logo"
+            alt="Aftermath Marketing"
+            src="./assets/img/logo2.png"
+          />
+        </a>
+        <div class="navbar__links flex" id="navMenu">
+          <a href="./index.html" class="navbar__link">Home</a>
+          <a href="./about.html" class="navbar__link">About</a>
+          <a href="./services.html" class="navbar__link">Services</a>
+          <a href="./blog.html" class="navbar__link navbar__link--active"
+            >Blog</a
+          >
+          <a href="./contact.html" class="navbar__link">Contact</a>
+        </div>
+        <div class="navbar__cta">
+          <div class="navbar__toggle" id="navToggle">
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--==================== End of Navigation Bar ====================-->
+
+    <!--==================== Blog Hero Section ====================-->
+    <section class="blog__hero" id="blog-hero">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container blog__hero-container">
+        <div class="blog__hero-content" data-aos="fade-up">
+          <div class="section__badge">Our Insights & Expertise</div>
+          <h1>Aftermath Marketing Blog</h1>
+          <p>
+            Expert insights, industry trends, and practical advice to help your
+            home-service business thrive in competitive markets.
+          </p>
+          <div class="blog__hero-search">
+            <form class="blog__search-form">
+              <div class="search__input-container">
+                <input
+                  type="text"
+                  id="blogSearch"
+                  class="search__input"
+                  placeholder="Search articles..."
+                />
+                <button type="submit" class="search__button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="shape-fill"
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Blog Hero Section ====================-->
+
+    <!--==================== Featured Posts Section ====================-->
+    <section class="featured__posts" id="featured__posts">
+      <div class="container">
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Latest Insights</div>
+          <h2>Featured Articles</h2>
+          <div class="section__title-line"></div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="featured__posts-grid"
+        >
+          <!--==================== Featured Post 1 ====================-->
+          <article class="featured__post">
+            <div class="featured__post-image">
+              <img
+                src="./assets/img/about.png"
+                alt="7 Strategies to Grow Your Restoration Business"
+              />
+              <div class="post__category">Business Growth</div>
+            </div>
+            <div class="featured__post__content">
+              <div class="post__meta">
+                <span class="post__date"
+                  ><i class="far fa-calendar"></i> March 15, 2025</span
+                >
+                <span class="post__read-time"
+                  ><i class="far fa-clock"></i> 8 min read</span
+                >
+              </div>
+              <h3 class="post__title">
+                7 Strategies to Grow Your Restoration Business in Competitive
+                Markets
+              </h3>
+              <p class="post__excerpt">
+                Discover proven tactics that can help your restoration business
+                stand out and thrive, even in saturated markets with established
+                competitors.
+              </p>
+              <div class="post__footer">
+                <a href="./blog__post.html?id=post1" class="post__link"
+                  >Read Article <i class="fas fa-arrow-right"></i
+                ></a>
+                <div class="post__author">
+                  <img src="./assets/img/clients.jpg" alt="James Wilson" />
+                  <span>James Wilson</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--==================== End of Featured Post 1 ====================-->
+
+          <!--==================== Featured Post 2 ====================-->
+          <article class="featured__post">
+            <div class="featured__post-image">
+              <img
+                src="./assets/img/clients.jpg"
+                alt="AI-Powered Customer Service"
+              />
+              <div class="post__category">Technology</div>
+            </div>
+            <div class="featured__post__content">
+              <div class="post__meta">
+                <span class="post__date"
+                  ><i class="far fa-calendar"></i> March 10, 2025</span
+                >
+                <span class="post__read-time"
+                  ><i class="far fa-clock"></i> 6 min read</span
+                >
+              </div>
+              <h3 class="post__title">
+                How AI-Powered Customer Service is Revolutionizing Home Services
+              </h3>
+              <p class="post__excerpt">
+                Learn how implementing AI customer service solutions can reduce
+                response times, improve customer satisfaction, and free your
+                team to focus on service delivery.
+              </p>
+              <div class="post__footer">
+                <a href="./blog__post.html?id=post2" class="post__link"
+                  >Read Article <i class="fas fa-arrow-right"></i
+                ></a>
+                <div class="post__author">
+                  <img src="./assets/img/hero/hero4.jpg" alt="Sarah Chen" />
+                  <span>Sarah Chen</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--==================== End of Featured Post 2 ====================-->
+
+          <!--==================== Featured Post 3 ====================-->
+          <article class="featured__post">
+            <div class="featured__post-image">
+              <img
+                src="./assets/img/cta.jpg"
+                alt="Optimizing Your Lead Generation Funnel"
+              />
+              <div class="post__category">Marketing</div>
+            </div>
+            <div class="featured__post__content">
+              <div class="post__meta">
+                <span class="post__date"
+                  ><i class="far fa-calendar"></i> March 5, 2025</span
+                >
+                <span class="post__read-time"
+                  ><i class="far fa-clock"></i> 10 min read</span
+                >
+              </div>
+              <h3 class="post__title">
+                Optimizing Your Lead Generation Funnel for Maximum Conversions
+              </h3>
+              <p class="post__excerpt">
+                Explore practical strategies to refine your lead generation
+                process and significantly increase your conversion rates in the
+                home services industry.
+              </p>
+              <div class="post__footer">
+                <a href="../blog__post.html?id=post3" class="post__link"
+                  >Read Article <i class="fas fa-arrow-right"></i
+                ></a>
+                <div class="post__author">
+                  <img src="./assets/img/clients.jpg" alt="Marcus Johnson" />
+                  <span>Marcus Johnson</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--==================== End of Featured Post 3 ====================-->
+        </div>
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Featured Posts Section ====================-->
+
+    <!--==================== Blog Posts Section ====================-->
+    <section class="blog__posts" id="blog-posts">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container">
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Knowledge Base</div>
+          <h2>All Articles</h2>
+          <div class="section__title-line"></div>
+        </div>
+
+        <!--==================== Blog Filter Categories ====================-->
+        <div class="blog__filter" data-aos="fade-up">
+          <button class="filter__button active" data-category="all">
+            All Categories
+          </button>
+          <button class="filter__button" data-category="business-growth">
+            Business Growth
+          </button>
+          <button class="filter__button" data-category="technology">
+            Technology
+          </button>
+          <button class="filter__button" data-category="marketing">
+            Marketing
+          </button>
+          <button class="filter__button" data-category="operations">
+            Operations
+          </button>
+        </div>
+        <!--==================== End of Blog Filter Categories ====================-->
+
+        <!--==================== Blog Posts Grid ====================-->
+        <div
+          id="blogPostsGrid"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="blog__posts-grid"
+        >
+          <!-- Blog posts will be loaded here dynamically via JavaScript -->
+        </div>
+        <!--==================== End of Blog Posts Grid ====================-->
+
+        <!--==================== Load More Button ====================-->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="blog__posts-load__more"
+        >
+          <button class="btn btn__primary" id="loadMoreBtn">
+            <span>Load More Articles</span>
+            <i class="fas fa-arrow-down"></i>
+          </button>
+        </div>
+        <!--==================== End of Load More Button ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="shape-fill"
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Blog Posts Section ====================-->
+
+    <!--==================== Newsletter Section ====================-->
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter__container" data-aos="fade-up">
+          <div class="newsletter__content">
+            <div class="section__badge">Stay Updated</div>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>
+              Get the latest industry insights, trends, and exclusive content
+              delivered directly to your inbox.
+            </p>
+          </div>
+          <form class="newsletter__form">
+            <div class="form__group">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn__primary">
+                <span>Subscribe</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+            <p class="form__disclaimer">
+              By subscribing, you agree to our Privacy Policy and consent to
+              receive marketing communications.
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Newsletter Section ====================-->
+
+    <!--==================== Footer ====================-->
+    <footer class="footer">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="footer__top">
+        <div class="container">
+          <!--==================== Footer Grid ====================-->
+          <div class="footer__grid">
+            <!--==================== Footer Links 1 ====================-->
+            <div class="footer__links">
+              <a href="./index.html" class="footer__logo-link">
+                <img
+                  class="footer__logo"
+                  alt="Aftermath Marketing"
+                  src="./assets/img/logo.jpg"
+                />
+              </a>
+              <p class="footer__description">
+                Connecting home-service businesses with growth opportunities
+                through AI-powered lead generation and operational solutions.
+              </p>
+              <div class="footer__social">
+                <a href="./blog__post.html" class="social__link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== End of Footer Links 1 ====================-->
+
+            <!--==================== Footer Links 2 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Services</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#services" class="footer__link">Debris Removal</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#services" class="footer__link">Tree Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#services" class="footer__link">Roofing & Repairs</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#services" class="footer__link"
+                    >Damage Restoration</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 2 ====================-->
+
+            <!--==================== Footer Links 3 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./about.html" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link">Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./blog.html" class="footer__link">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./contact.html" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 3 ====================-->
+
+            <!--==================== Footer Links 4 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Contact</h4>
+              <ul class="footer__list">
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-envelope"></i>
+                  <span>info@aftermath.com</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>(555) 123-4567</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fa-solid fa-headset"></i>
+                  <span>Available 24/7</span>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 4 ====================-->
+          </div>
+          <!--==================== End of Footer Grid ====================-->
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <!--==================== Copyright ====================-->
+          <div class="copyright">
+            <div class="copyright__text">
+              © 2025 Aftermath Marketing. All rights reserved.
+            </div>
+          </div>
+          <!--==================== End of Copyright ====================-->
+        </div>
+      </div>
+    </footer>
+    <!--==================== End of Footer ====================-->
+
+    <!--==================== Animate On Scroll Script Link ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!--==================== End of Animate On Scroll Script Link ====================-->
+
+    <!--==================== Main Script Link ====================-->
+    <script src="./assets/js/main2.js"></script>
+    <!--==================== End of Main Script Link ====================-->
+
+    <!--==================== Blog Script Link ====================-->
+    <script src="./assets/js/blog.js"></script>
+    <!--==================== End of Blog Script Link ====================-->
+  </body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aftermath Marketing | Blog Builder</title>
+
+    <!--==================== Favicon ====================-->
+    <link href="./assets/img/logo.jpg" rel="icon" />
+    <!--==================== End of Favicon ====================-->
+
+    <!--==================== Icons Link ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--==================== End of Icons Link ====================-->
+
+    <!--==================== Animate On Scroll Link ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!--==================== End of Animate On Scroll Link ====================-->
+
+    <!--==================== Rich Text Editor ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.min.css"
+    />
+    <!--==================== End of Rich Text Editor ====================-->
+
+    <!--==================== StyleSheet Link ====================-->
+    <link rel="stylesheet" href="./assets/css/main2.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/blog-builder.css" />
+    <!--==================== End of StyleSheet Link ====================-->
+
+    <!--==================== Google tag (gtag.js) ====================-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-16Q8BKGHTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-16Q8BKGHTH");
+    </script>
+    <!--==================== End of Google tag (gtag.js) ====================-->
+  </head>
+  <body>
+    <!--==================== Navigation Bar ====================-->
+    <nav class="navbar">
+      <div class="container navbar__container flex__center">
+        <a href="./index.html" class="navbar__logo-link">
+          <img
+            class="navbar__logo"
+            alt="Aftermath Marketing"
+            src="./assets/img/logo2.png"
+          />
+        </a>
+        <div class="navbar__links flex" id="navMenu">
+          <a href="./index.html" class="navbar__link">Home</a>
+          <a href="./about.html" class="navbar__link">About</a>
+          <a href="./services.html" class="navbar__link">Services</a>
+          <a href="./blog.html" class="navbar__link">Blog</a>
+          <a href="./contact.html" class="navbar__link">Contact</a>
+        </div>
+        <div class="navbar__cta">
+          <div class="navbar__toggle" id="navToggle">
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--==================== End of Navigation Bar ====================-->
+
+    <!--==================== Blog Builder Header ====================-->
+    <section class="builder__header" id="builder-header">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container">
+        <div class="builder__header-content" data-aos="fade-up">
+          <div class="section__badge">Content Management</div>
+          <h1>Blog Post Builder</h1>
+          <p>
+            Create, preview, and publish your blog posts with our intuitive
+            content management system.
+          </p>
+        </div>
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="shape-fill"
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Blog Builder Header ====================-->
+
+    <!--==================== Blog Builder Main ====================-->
+    <section class="blog__builder" id="blog-builder">
+      <div class="container">
+        <!--==================== Blog Builder Tabs ====================-->
+        <div class="builder__tabs" data-aos="fade-up">
+          <button class="builder__tab active" data-tab="settings">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </button>
+          <button class="builder__tab" data-tab="editor">
+            <i class="fas fa-edit"></i>
+            <span>Editor</span>
+          </button>
+          <button class="builder__tab" data-tab="preview">
+            <i class="fas fa-eye"></i>
+            <span>Preview</span>
+          </button>
+        </div>
+        <!--==================== End of Blog Builder Tabs ====================-->
+
+        <!--==================== Blog Builder Content ====================-->
+        <div class="builder__content" data-aos="fade-up" data-aos-delay="100">
+          <!--==================== Settings Panel ====================-->
+          <div class="builder__panel active" id="settings-panel">
+            <div class="settings__container">
+              <div class="settings__section">
+                <h3>Post Metadata</h3>
+                <div class="settings__group">
+                  <label for="postAuthor">Author Name</label>
+                  <input type="text" id="postAuthor" placeholder="Your name" />
+                </div>
+                <div class="settings__group">
+                  <label for="postCategory">Category</label>
+                  <select id="postCategory">
+                    <option value="business-growth">Business Growth</option>
+                    <option value="technology">Technology</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="operations">Operations</option>
+                  </select>
+                </div>
+                <div class="settings__group">
+                  <label for="postExcerpt">Post Excerpt (Summary)</label>
+                  <textarea
+                    id="postExcerpt"
+                    placeholder="Brief summary of your post (1-2 sentences)"
+                  ></textarea>
+                </div>
+                <div class="settings__group">
+                  <label for="postReadTime"
+                    >Estimated Read Time (minutes)</label
+                  >
+                  <input
+                    min="1"
+                    max="60"
+                    value="5"
+                    type="number"
+                    id="postReadTime"
+                  />
+                </div>
+              </div>
+
+              <div class="settings__section">
+                <h3>Featured Image</h3>
+                <div class="settings__group">
+                  <label for="featuredImageUpload">Upload Image</label>
+                  <div class="image-upload-container">
+                    <div class="image-preview">
+                      <img
+                        id="imagePreview"
+                        alt="Featured Image Preview"
+                        src="./assets/img/blog/featured-placeholder.jpg"
+                      />
+                    </div>
+                    <div class="image-upload-actions">
+                      <input
+                        type="file"
+                        accept="image/*"
+                        id="featuredImageUpload"
+                      />
+                      <label
+                        for="featuredImageUpload"
+                        class="btn btn__secondary"
+                      >
+                        <i class="fas fa-upload"></i>
+                        <span>Choose Image</span>
+                      </label>
+                      <button class="btn btn__text" id="removeImage">
+                        <i class="fas fa-trash-alt"></i>
+                        <span>Remove</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== End of Settings Panel ====================-->
+
+          <!--==================== Editor Panel ====================-->
+          <div class="builder__panel" id="editor-panel">
+            <div class="editor__container">
+              <div class="post__title">
+                <input
+                  type="text"
+                  id="postTitle"
+                  class="title__input"
+                  placeholder="Enter post title..."
+                />
+              </div>
+              <div class="post__content">
+                <div id="editor"></div>
+              </div>
+            </div>
+          </div>
+          <!--==================== End of Editor Panel ====================-->
+
+          <!--==================== Preview Panel ====================-->
+          <div class="builder__panel" id="preview-panel">
+            <div class="preview__container">
+              <div class="preview__header">
+                <h1 id="previewTitle">Your Post Title</h1>
+                <div class="preview__meta">
+                  <span class="preview__date"
+                    ><i class="far fa-calendar"></i>
+                    <span id="previewDate">March 19, 2025</span></span
+                  >
+                  <span class="preview__author"
+                    ><i class="far fa-user"></i>
+                    <span id="previewAuthor">Your Name</span></span
+                  >
+                  <span class="preview__category"
+                    ><i class="far fa-folder"></i>
+                    <span id="previewCategory">Category</span></span
+                  >
+                </div>
+              </div>
+              <div class="preview__featured-image">
+                <img
+                  id="previewImage"
+                  alt="Featured Image"
+                  src="./assets/img/blog/featured-placeholder.jpg"
+                />
+              </div>
+              <div class="preview__content" id="previewContent">
+                <p>
+                  Your content will appear here as you type in the editor panel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--==================== End of Preview Panel ====================-->
+        </div>
+        <!--==================== End of Blog Builder Content ====================-->
+
+        <!--==================== Blog Builder Actions ====================-->
+        <div class="builder__actions" data-aos="fade-up" data-aos-delay="200">
+          <button class="btn btn__secondary" id="saveDraftBtn">
+            <i class="fas fa-save"></i>
+            <span>Save Draft</span>
+          </button>
+          <button class="btn btn__primary" id="publishBtn">
+            <i class="fas fa-paper-plane"></i>
+            <span>Publish Post</span>
+          </button>
+        </div>
+        <!--==================== End of Blog Builder Actions ====================-->
+      </div>
+    </section>
+    <!--==================== End of Blog Builder Main ====================-->
+
+    <!--==================== Publish Confirmation Modal ====================-->
+    <div class="modal" id="publishModal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3>Publish Post</h3>
+          <button class="modal__close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal__body">
+          <p>
+            Are you sure you want to publish this blog post? Published posts
+            will be visible on the blog page.
+          </p>
+          <div class="post__preview-card">
+            <div class="preview__card-image">
+              <img
+                alt="Post Preview"
+                id="modalPreviewImage"
+                src="./assets/img/blog/featured-placeholder.jpg"
+              />
+            </div>
+            <div class="preview__card-content">
+              <h4 id="modalPreviewTitle">Your Post Title</h4>
+              <p id="modalPreviewExcerpt">
+                Your post excerpt will appear here.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <button class="btn btn__secondary" id="cancelPublishBtn">
+            <span>Cancel</span>
+          </button>
+          <button class="btn btn__primary" id="confirmPublishBtn">
+            <i class="fas fa-paper-plane"></i>
+            <span>Publish Now</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--==================== End of Publish Confirmation Modal ====================-->
+
+    <!--==================== Success Notification ====================-->
+    <div class="notification" id="notification">
+      <div class="notification__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="notification__content">
+        <h4 id="notificationTitle">Success!</h4>
+        <p id="notificationMessage">
+          Your blog post has been published successfully.
+        </p>
+      </div>
+      <button class="notification__close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <!--==================== End of Success Notification ====================-->
+
+    <!--==================== Footer ====================-->
+    <footer class="footer">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="footer__top">
+        <div class="container">
+          <!--==================== Footer Grid ====================-->
+          <div class="footer__grid">
+            <!--==================== Footer Links 1 ====================-->
+            <div class="footer__links">
+              <a href="./index.html" class="footer__logo-link">
+                <img
+                  class="footer__logo"
+                  alt="Aftermath Marketing"
+                  src="./assets/img/logo.jpg"
+                />
+              </a>
+              <p class="footer__description">
+                Connecting home-service businesses with growth opportunities
+                through AI-powered lead generation and operational solutions.
+              </p>
+              <div class="footer__social">
+                <a href="#" class="social__link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== End of Footer Links 1 ====================-->
+
+            <!--==================== Footer Links 2 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Services</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#services" class="footer__link">Debris Removal</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#services" class="footer__link">Tree Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#services" class="footer__link">Roofing & Repairs</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#services" class="footer__link"
+                    >Damage Restoration</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 2 ====================-->
+
+            <!--==================== Footer Links 3 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./about.html" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link">Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./blog.html" class="footer__link">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./contact.html" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 3 ====================-->
+
+            <!--==================== Footer Links 4 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Contact</h4>
+              <ul class="footer__list">
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-envelope"></i>
+                  <span>info@aftermath.com</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>(555) 123-4567</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fa-solid fa-headset"></i>
+                  <span>Available 24/7</span>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 4 ====================-->
+          </div>
+          <!--==================== End of Footer Grid ====================-->
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <!--==================== Copyright ====================-->
+          <div class="copyright">
+            <div class="copyright__text">
+              © 2025 Aftermath Marketing. All rights reserved.
+            </div>
+          </div>
+          <!--==================== End of Copyright ====================-->
+        </div>
+      </div>
+    </footer>
+    <!--==================== End of Footer ====================-->
+
+    <!--==================== Rich Text Editor Script ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.min.js"></script>
+    <!--==================== End of Rich Text Editor Script ====================-->
+
+    <!--==================== Animate On Scroll Script Link ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!--==================== End of Animate On Scroll Script Link ====================-->
+
+    <!--==================== Main Script Link ====================-->
+    <script src="./assets/js/main2.js"></script>
+    <!--==================== End of Main Script Link ====================-->
+
+    <!--==================== Blog Builder Script Link ====================-->
+    <script src="./assets/js/blog-builder.js"></script>
+    <!--==================== End of Blog Builder Script Link ====================-->
+  </body>
+</html>
