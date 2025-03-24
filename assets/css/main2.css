@@ -1546,6 +1546,10 @@ section {
     background: var(--dark-bg);
 }
 
+.features .section__badge{
+    color: var(--success);
+}
+
 .features .section__title h2 {
     color: white;
 }
@@ -2579,6 +2583,10 @@ section {
     position: relative;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.cta__content .section__badge {
+    color: var(--success);
 }
 
 .cta__main {
