@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROUP26 Consult | About Us</title>
+    <title>Aftermath Marketing | About Us</title>
 
     <!--==================== Favicon ====================-->
     <link href="./assets/img/logo.jpg" rel="icon" />
@@ -11,443 +11,748 @@
 
     <!--==================== Icons Link ====================-->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!--==================== End of Icons Link ====================-->
 
     <!--==================== Animate On Scroll Link ====================-->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <!--==================== End of Animate On Scroll Link ====================-->
 
-    <!--==================== StyleSheet Links ====================-->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!--==================== StyleSheet Link ====================-->
+    <link rel="stylesheet" href="./assets/css/main2.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
-    <!--==================== End of StyleSheet Links ====================-->
+    <!--==================== End of StyleSheet Link ====================-->
+
+    <!--==================== Google tag (gtag.js) ====================-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-16Q8BKGHTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-16Q8BKGHTH");
+    </script>
+    <!--==================== End of Google tag (gtag.js) ====================-->
   </head>
   <body>
     <!--==================== Navigation Bar ====================-->
     <nav class="navbar">
-      <div class="container nav__container flex__center">
-        <a href="./index.html" class="logo__link">
+      <div class="container navbar__container flex__center">
+        <a href="./index.html" class="navbar__logo-link">
           <img
-            class="logo"
+            class="navbar__logo"
             alt="Aftermath Marketing"
             src="./assets/img/logo2.png"
           />
         </a>
-
-        <div class="nav__links flex" id="navMenu">
-          <a href="./index.html">Home</a>
-          <a href="./about.html" class="active">About</a>
-          <a href="./services.html">Services</a>
+        <div class="navbar__links flex" id="navMenu">
+          <a href="./index.html" class="navbar__link">Home</a>
+          <a href="./about.html" class="navbar__link navbar__link--active"
+            >About</a
+          >
+          <a href="./services.html" class="navbar__link">Services</a>
           <a href="./blog.html" class="navbar__link">Blog</a>
-          <a href="./contact.html">Contact</a>
+          <a href="./contact.html" class="navbar__link">Contact</a>
         </div>
-
-        <div class="nav__toggle" id="navToggle">
-          <i class="fas fa-bars"></i>
+        <div class="navbar__cta">
+          <div class="navbar__toggle" id="navToggle">
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+          </div>
         </div>
       </div>
     </nav>
     <!--==================== End of Navigation Bar ====================-->
 
     <!--==================== Hero Section ====================-->
-    <section class="about__hero hero flex__center" id="home">
-      <div class="container hero__content flex__center">
-        <!--==================== Hero Section Info ====================-->
-        <div class="hero__text" data-aos="fade-right">
-          <h1>Connecting Businesses with Communities in Need.</h1>
-          <p>
-            At Aftermath Marketing, we specialize in providing pre-qualified
-            leads for businesses in disaster recovery. Our mission is simple: to
-            bridge the gap between service providers and disaster-affected
-            communities, ensuring timely and effective support when it matters
-            most.
-          </p>
-          <div class="cta__buttons">
-            <a href="./about.html" class="btn btn__primary">Book a call →</a>
+    <section class="hero about-hero" id="home">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container hero__container">
+        <div class="about-hero__content">
+          <div class="about-hero__text" data-aos="fade-up">
+            <div class="section__badge">
+              <span>About Us</span>
+            </div>
+            <h1>Building Stronger Communities and Businesses</h1>
+            <p>
+              At Aftermath Marketing, we work closely with disaster recovery and
+              home-service businesses to solve their toughest growth challenges.
+            </p>
           </div>
         </div>
-        <!--==================== End of Hero Section Info ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Hero Section ====================-->
 
-    <!--==================== Vision & Mission Section ====================-->
-    <section class="vision__mission" id="mission-vision">
+    <!--==================== Our Story Section ====================-->
+    <section class="story" id="story">
       <div class="container">
-        <!--==================== Vision Content ====================-->
-        <div class="vision__content" data-aos="fade-up">
-          <div class="vision__overlay"></div>
-          <div class="vision__info">
-            <span class="section__subtitle">Our Vision</span>
-            <h2>Driving Recovery Through Meaningful Connections</h2>
-            <p>
-              We aim to foster impactful relationships between disaster recovery
-              businesses and communities in need, ensuring timely support and
-              lasting growth.
-            </p>
+        <!--==================== Section Title ====================-->
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Our Story</div>
+          <h2>Who We Are and What Drives Us</h2>
+          <div class="section__title-line"></div>
+        </div>
+        <!--==================== End of Section Title ====================-->
+
+        <!--==================== Story Content ====================-->
+        <div class="story__content" data-aos="fade-up" data-aos-delay="200">
+          <div class="story__grid">
+            <div class="story__text">
+              <p>
+                At Aftermath Marketing, we work closely with disaster recovery
+                and home-service businesses to solve their toughest growth
+                challenges. We understand how difficult it can be to reach the
+                right customers, manage daily operations, and compete
+                effectively. That's why we take a different approach—using
+                advanced technology to simplify the growth process, deliver
+                reliable leads, and improve your overall business efficiency.
+              </p>
+              <div class="story__cta">
+                <a href="#cta" class="btn btn__primary">
+                  <span>Book Your Free Consultation</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="story__image">
+              <img
+                src="./assets/img/about.png "
+                alt="Aftermath Marketing Team"
+              />
+              <div class="image__overlay"></div>
+            </div>
           </div>
         </div>
-        <!--==================== End of Vision Content ====================-->
+        <!--==================== End of Story Content ====================-->
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Our Story Section ====================-->
 
-        <!--==================== Mission Cards ====================-->
-        <div class="mission__cards grid">
-          <!--==================== Mission Card 1 ====================-->
-          <div class="mission__card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card__overlay"></div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-handshake"></i>
+    <!--==================== Vision & Mission Section ====================-->
+    <section class="vision-mission" id="vision-mission">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container">
+        <div class="vision-mission__wrapper">
+          <!--==================== Vision Content ====================-->
+          <div class="vision-mission__content" data-aos="fade-right">
+            <div class="vision-mission__card vision__card">
+              <div class="card__glass-effect"></div>
+              <div class="card__icon">
+                <i class="fas fa-rocket"></i>
               </div>
-              <h3>Our Mission</h3>
-              <p>
-                Streamlining Disaster Recovery Efforts To revolutionize the
-                recovery process by connecting businesses with high-quality
-                leads, allowing them to focus on delivering critical services
-                and rebuilding communities.
+              <h3 class="card__title">Our Vision</h3>
+              <p class="card__text">
+                We imagine a future where disaster recovery and home-service
+                companies no longer struggle with unreliable marketing,
+                complicated business processes, or intense competition. By
+                combining smart technology with focused strategies, we aim to
+                simplify and enhance how your business grows, making it easier
+                to attract customers, streamline operations, and stay ahead of
+                competitors.
               </p>
             </div>
           </div>
-          <!--==================== End of Mission Card 1 ====================-->
+          <!--==================== End of Vision Content ====================-->
 
-          <!--==================== Mission Card 2 ====================-->
-          <div class="mission__card" data-aos="fade-up" data-aos-delay="200">
-            <div class="card__overlay"></div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-heart"></i>
-              </div>
-              <h3>Our Values</h3>
-              <p>
-                We believe in intergrity, urgency and unwavering commitment to
-                communities in need. Every step we make is a step towards faster
-                recovery.
-              </p>
-            </div>
-          </div>
-          <!--==================== End of Mission Card 2 ====================-->
-
-          <!--==================== Mission Card 3 ====================-->
-          <div class="mission__card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card__overlay"></div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
+          <!--==================== Mission Content ====================-->
+          <div class="vision-mission__content" data-aos="fade-left">
+            <div class="vision-mission__card mission__card">
+              <div class="card__glass-effect"></div>
+              <div class="card__icon">
                 <i class="fas fa-bullseye"></i>
               </div>
-              <h3>Our Promise</h3>
-              <p>
-                We deliver results you can trust. With every lead, we help you
-                grow your business while making a tangible difference in
-                disaster recovery.
+              <h3 class="card__title">Our Mission</h3>
+              <p class="card__text">
+                Our goal is simple: help businesses grow by connecting them with
+                qualified leads and providing practical, technology-driven
+                solutions. We address everyday issues like poor-quality leads,
+                high advertising costs, and administrative overload, allowing
+                you more time to focus on your core services and customers.
               </p>
             </div>
           </div>
-          <!--==================== End of Mission Card 3 ====================-->
+          <!--==================== End of Mission Content ====================-->
         </div>
-        <!--==================== End of Mission Cards ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Vision & Mission Section ====================-->
 
     <!--==================== Values Section ====================-->
-    <section class="values">
+    <section class="values" id="values">
       <div class="container">
         <!--==================== Section Title ====================-->
-        <div class="section__title">
-          <h2>Our Core Values</h2>
-          <p>The principles that drive our success</p>
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">What We Stand For</div>
+          <h2>Our Values Guide Everything We Do</h2>
+          <div class="section__title-line"></div>
         </div>
         <!--==================== End of Section Title ====================-->
 
-        <!--==================== Values Container ====================-->
-        <div class="values__container grid">
+        <!--==================== Values Grid ====================-->
+        <div class="values__grid" data-aos="fade-up" data-aos-delay="200">
           <!--==================== Value Card 1 ====================-->
-          <div class="value__card" data-aos="fade-up">
-            <div class="value__icon flex__center">
-              <i class="fas fa-scale-balanced"></i>
+          <div class="values__card" data-aos="fade-up" data-aos-delay="100">
+            <div class="values__icon">
+              <i class="fas fa-balance-scale"></i>
             </div>
-            <h3>Integrity</h3>
-            <p>
-              We believe in honest, transparent business practices that foster
-              trust.
+            <h3 class="values__title">Integrity</h3>
+            <p class="values__text">
+              We believe in honesty, clear communication, and transparency to
+              build trust and lasting relationships.
             </p>
-            <div class="value__bg"></div>
           </div>
           <!--==================== End of Value Card 1 ====================-->
 
           <!--==================== Value Card 2 ====================-->
-          <div class="value__card" data-aos="fade-up" data-aos-delay="100">
-            <div class="value__icon flex__center">
-              <i class="fas fa-bolt-lightning"></i>
+          <div class="values__card" data-aos="fade-up" data-aos-delay="200">
+            <div class="values__icon">
+              <i class="fas fa-bolt"></i>
             </div>
-            <h3>Urgency</h3>
-            <p>
-              Time is of the essence in disaster recovery, and we deliver leads
-              quickly and efficiently.
+            <h3 class="values__title">Urgency</h3>
+            <p class="values__text">
+              We understand the importance of quick responses and deliver
+              solutions promptly.
             </p>
-            <div class="value__bg"></div>
           </div>
           <!--==================== End of Value Card 2 ====================-->
 
           <!--==================== Value Card 3 ====================-->
-          <div class="value__card" data-aos="fade-up" data-aos-delay="200">
-            <div class="value__icon flex__center">
-              <i class="fas fa-award"></i>
+          <div class="values__card" data-aos="fade-up" data-aos-delay="300">
+            <div class="values__icon">
+              <i class="fas fa-lightbulb"></i>
             </div>
-            <h3>Excellence</h3>
-            <p>
-              Our commitment to quality ensures every lead contributes to
-              meaningful action.
+            <h3 class="values__title">Innovation</h3>
+            <p class="values__text">
+              We continuously seek simpler, smarter ways to help your business
+              grow.
             </p>
-            <div class="value__bg"></div>
           </div>
           <!--==================== End of Value Card 3 ====================-->
 
           <!--==================== Value Card 4 ====================-->
-          <div class="value__card" data-aos="fade-up" data-aos-delay="300">
-            <div class="value__icon flex__center">
-              <i class="fas fa-hand-holding-heart"></i>
+          <div class="values__card" data-aos="fade-up" data-aos-delay="400">
+            <div class="values__icon">
+              <i class="fas fa-heart"></i>
             </div>
-            <h3>Empathy</h3>
-            <p>
-              We understand the challenges faced by both service providers and
-              communities, and we work to make a difference.
+            <h3 class="values__title">Empathy</h3>
+            <p class="values__text">
+              We truly understand your challenges and tailor our support to meet
+              your specific needs.
             </p>
-            <div class="value__bg"></div>
           </div>
           <!--==================== End of Value Card 4 ====================-->
         </div>
-        <!--==================== End of Values Container ====================-->
+        <!--==================== End of Values Grid ====================-->
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Values Section ====================-->
 
-    <!--==================== Client Experience Section ====================-->
-    <section class="experience">
+    <!--==================== Commitment Section ====================-->
+    <section class="commitment" id="commitment">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container">
+        <!--==================== Commitment Content ====================-->
+        <div class="commitment__content">
+          <div class="commitment__text" data-aos="fade-right">
+            <div class="section__badge">Our Commitment</div>
+            <h2>We Deliver Real Results</h2>
+            <p>
+              We don't just talk about results—we deliver them. Through targeted
+              lead generation and smart technology solutions, we help your
+              business become more efficient, profitable, and easier to manage.
+              You'll notice clear improvements in how your business operates and
+              how quickly you grow.
+            </p>
+          </div>
+          <div class="commitment__image" data-aos="fade-left">
+            <img
+              src="./assets/img/about2.jpg"
+              alt="Aftermath Marketing Results"
+            />
+            <div class="commitment__stats">
+              <div class="stats__item">
+                <div class="stats__value">150%</div>
+                <div class="stats__label">Average ROI</div>
+              </div>
+              <div class="stats__item">
+                <div class="stats__value">98%</div>
+                <div class="stats__label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--==================== End of Commitment Content ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Commitment Section ====================-->
+
+    <!--==================== Why Choose Us Section ====================-->
+    <section class="why-choose" id="why-choose">
       <div class="container">
         <!--==================== Section Title ====================-->
-        <div class="section__title">
-          <h2>The Client Experience</h2>
-          <p>What Sets Us Apart in Lead Generation</p>
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Why Choose Us</div>
+          <h2>Why Businesses Choose Aftermath Marketing</h2>
+          <div class="section__title-line"></div>
         </div>
         <!--==================== End of Section Title ====================-->
 
-        <!--==================== Experience Grid ====================-->
-        <div class="experience__grid grid">
-          <!--==================== Experience Card 1 ====================-->
-          <div class="experience__card" data-aos="fade-up">
-            <div class="card__header">
-              <div class="card__icon">
-                <i class="fas fa-message"></i>
-              </div>
-              <h3>Clear Communication</h3>
-            </div>
-            <p>
-              We keep you informed with real-time updates about your leads,
-              ensuring transparency and a seamless experience every step of the
-              way.
-            </p>
+        <!--==================== Why Choose Features ====================-->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="why-choose__features"
+        >
+          <div class="why-choose__image">
+            <img
+              src="./assets/img/ethics.jpg"
+              alt="Why Choose Aftermath Marketing"
+            />
           </div>
-          <!--==================== End of Experience Card 1 ====================-->
-
-          <!--==================== Experience Card 2 ====================-->
-          <div class="experience__card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card__header">
-              <div class="card__icon">
+          <div class="why-choose__list">
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature__icon">
                 <i class="fas fa-check-circle"></i>
               </div>
-              <h3>Pre-Qualified Lead Delivery</h3>
-            </div>
-            <p>
-              Receive exclusive, pre-qualified leads directly to your inbox,
-              saving you time and ensuring every lead is ready to convert.
-            </p>
-          </div>
-          <!--==================== End of Experience Card 2 ====================-->
-
-          <!--==================== Experience Card 3 ====================-->
-          <div class="experience__card" data-aos="fade-up" data-aos-delay="200">
-            <div class="card__header">
-              <div class="card__icon">
-                <i class="fas fa-crosshairs"></i>
+              <div class="feature__content">
+                <h3>Reliable Leads</h3>
+                <p>
+                  We carefully qualify each lead, ensuring your time and
+                  resources go towards genuine opportunities.
+                </p>
               </div>
-              <h3>Tailored Lead Matching</h3>
             </div>
-            <p>
-              We ensure every lead aligns with your specific services and target
-              market, helping you connect with clients who truly need your
-              expertise.
-            </p>
-          </div>
-          <!--==================== End of Experience Card 3 ====================-->
-
-          <!--==================== Experience Card 4 ====================-->
-          <div class="experience__card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card__header">
-              <div class="card__icon">
-                <i class="fas fa-file-invoice-dollar"></i>
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature__icon">
+                <i class="fas fa-check-circle"></i>
               </div>
-              <h3>Flat-Fee Pricing Transparency</h3>
-            </div>
-            <p>
-              No hidden costs or commissions—our flat-fee model means you know
-              exactly what you’re paying for, allowing you to focus on growth.
-            </p>
-          </div>
-          <!--==================== End of Experience Card 4 ====================-->
-
-          <!--==================== Experience Card 5 ====================-->
-          <div class="experience__card" data-aos="fade-up" data-aos-delay="400">
-            <div class="card__header">
-              <div class="card__icon">
-                <i class="fas fa-bolt"></i>
+              <div class="feature__content">
+                <h3>Simple Technology Solutions</h3>
+                <p>
+                  Our easy-to-use tools streamline your operations and help you
+                  make informed decisions.
+                </p>
               </div>
-              <h3>Fast Lead Delivery</h3>
             </div>
-            <p>
-              We understand the urgency of disaster recovery. That’s why we
-              deliver leads quickly, helping you respond to opportunities as
-              they arise.
-            </p>
-          </div>
-          <!--==================== End of Experience Card 5 ====================-->
-
-          <!--==================== Experience Card 6 ====================-->
-          <div class="experience__card" data-aos="fade-up" data-aos-delay="500">
-            <div class="card__header">
-              <div class="card__icon">
-                <i class="fas fa-clock-rotate-left"></i>
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature__icon">
+                <i class="fas fa-check-circle"></i>
               </div>
-              <h3>Personalized Support</h3>
+              <div class="feature__content">
+                <h3>Operational Efficiency</h3>
+                <p>
+                  Automating routine tasks helps your team focus more on
+                  customer service and less on paperwork.
+                </p>
+              </div>
             </div>
-            <p>
-              Our team is here to assist you whenever needed. From answering
-              your questions to ensuring lead quality, we’re committed to your
-              success.
-            </p>
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature__icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="feature__content">
+                <h3>Predictable Pricing</h3>
+                <p>
+                  Our straightforward pricing ensures you always know what to
+                  expect, without any hidden fees.
+                </p>
+              </div>
+            </div>
           </div>
-          <!--==================== End of Experience Card 6 ====================-->
         </div>
-        <!--==================== Experience Grid ====================-->
+        <!--==================== End of Why Choose Features ====================-->
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Why Choose Us Section ====================-->
+
+    <!--==================== Client Experience Section ====================-->
+    <section class="experience" id="experience">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container">
+        <!--==================== Section Title ====================-->
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Client Experience</div>
+          <h2>Our Client Experience: A Personal Touch</h2>
+          <div class="section__title-line"></div>
+        </div>
+        <!--==================== End of Section Title ====================-->
+
+        <!--==================== Experience Content ====================-->
+        <div
+          class="experience__content"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <p class="experience__text">
+            What sets us apart is our personal approach. From your first meeting
+            to continuous improvement, we ensure you have a smooth, stress-free
+            experience. Our team provides hands-on support, clear guidance, and
+            measurable results to help your business thrive.
+          </p>
+
+          <!--==================== Results Stats ====================-->
+          <div class="results__stats">
+            <div class="stats__card" data-aos="fade-up" data-aos-delay="100">
+              <div class="stats__icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="stats__value">150%</div>
+              <div class="stats__label">Average Return on Investment</div>
+            </div>
+            <div class="stats__card" data-aos="fade-up" data-aos-delay="200">
+              <div class="stats__icon">
+                <i class="fas fa-smile"></i>
+              </div>
+              <div class="stats__value">98%</div>
+              <div class="stats__label">Client Satisfaction</div>
+            </div>
+            <div class="stats__card" data-aos="fade-up" data-aos-delay="300">
+              <div class="stats__icon">
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+              <div class="stats__value">3.2x</div>
+              <div class="stats__label">Higher Conversion Rates</div>
+            </div>
+          </div>
+          <!--==================== End of Results Stats ====================-->
+        </div>
+        <!--==================== End of Experience Content ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Client Experience Section ====================-->
 
     <!--==================== Call to Action Section ====================-->
-    <section class="cta">
+    <section class="cta" id="cta">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
       <div class="container">
         <!--==================== CTA Content ====================-->
-        <div class="cta__content flex__center">
-          <div class="cta__left" data-aos="fade-right">
-            <p class="cta__overline">Ready to Transform?</p>
-            <h2>Let's Rebuild Communities Together</h2>
+        <div class="cta__content">
+          <div class="cta__main" data-aos="fade-up">
+            <div class="section__badge">Ready to Get Started?</div>
+            <h2>Ready to Simplify Your Growth?</h2>
             <p class="cta__description">
-              Join forces with the leading disaster recovery lead generation
-              experts. Your success story starts here.
+              Many successful businesses have already chosen Aftermath Marketing
+              for simpler growth solutions and reliable leads. You can be next.
+              Start improving your business today.
             </p>
-            <div class="cta__stats flex">
-              <div class="mini__stat">
-                <h4>500+</h4>
-                <p>Projects Completed</p>
-              </div>
-              <div class="mini__stat">
-                <h4>98%</h4>
-                <p>Client Satisfaction</p>
-              </div>
-            </div>
-          </div>
-          <!--==================== End of CTA Content ====================-->
 
-          <!--==================== CTA Right ====================-->
-          <div class="cta__right" data-aos="fade-left">
-            <div class="cta__card">
-              <div class="card__icon flex__center flex__center">
-                <i class="fas fa-rocket"></i>
-              </div>
-              <h3>Start Your Journey</h3>
-              <p>Schedule a free consultation with our experts</p>
-              <a href="./contact.html" class="btn btn__primary"
-                >Get Started →</a
-              >
+            <div class="cta__actions">
+              <a href="./contact.html" class="btn btn__primary btn__cta">
+                <span>Schedule Your Free Growth Consultation</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </div>
-          <!--==================== End of CTA Right ====================-->
+
+          <div class="cta__info-cards" data-aos="fade-up" data-aos-delay="200">
+            <div class="info__header">
+              <div class="card__icon">
+                <i class="fas fa-headset"></i>
+                <div class="icon__glow"></div>
+              </div>
+              <h3>Contact Us</h3>
+            </div>
+
+            <div class="info__container">
+              <div class="info__card">
+                <div class="info__icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info__content">
+                  <h4>Email</h4>
+                  <p>office@aftermath-marketing.com</p>
+                </div>
+              </div>
+
+              <div class="info__card">
+                <div class="info__icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info__content">
+                  <h4>Phone</h4>
+                  <p>+1 (678) 995 6174</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__note">
+              <div class="note__icon">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <p>Available 24/7 to help with your business growth needs.</p>
+            </div>
+          </div>
         </div>
         <!--==================== End of CTA Content ====================-->
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Call to Action Section ====================-->
 
     <!--==================== Footer ====================-->
-    <footer class="about__footer">
-      <div class="container">
-        <!--==================== Footer Grid ====================-->
-        <div class="footer__grid">
-          <!--==================== Footer Links 1 ====================-->
-          <div class="footer__links">
-            <a href="./index.html" class="logo__link">
-              <img
-                class="logo footer__logo"
-                alt="Aftermath Marketing"
-                src="./assets/img/logo.jpg"
-              />
-            </a>
-            <p>
-              Connecting disaster-affected communities with reliable recovery
-              services through strategic lead generation.
-            </p>
-          </div>
-          <!--==================== End of Footer Links 1 ====================-->
+    <footer class="footer">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="footer__top">
+        <div class="container">
+          <!--==================== Footer Grid ====================-->
+          <div class="footer__grid">
+            <!--==================== Footer Links 1 ====================-->
+            <div class="footer__links">
+              <a href="./index.html" class="footer__logo-link">
+                <img
+                  class="footer__logo"
+                  alt="Aftermath Marketing"
+                  src="./assets/img/logo.jpg"
+                />
+              </a>
+              <p class="footer__description">
+                Connecting home-service businesses with growth opportunities
+                through AI-powered lead generation and operational solutions.
+              </p>
+              <div class="footer__social">
+                <a href="#" class="social__link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== End of Footer Links 1 ====================-->
 
-          <!--==================== Footer Links 2 ====================-->
-          <div class="footer__links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">Debris Removal</a></li>
-              <li><a href="#services">Hazmat Cleanup</a></li>
-              <li><a href="#services">Tree Clearing</a></li>
-              <li><a href="#services">Soil Remediation</a></li>
-            </ul>
-          </div>
-          <!--==================== End of Footer Links 2 ====================-->
+            <!--==================== Footer Links 2 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Services</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Debris Removal</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Tree Services</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Roofing & Repairs</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Damage Restoration</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 2 ====================-->
 
-          <!--==================== Footer Links 3 ====================-->
-          <div class="footer__links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!--==================== End of Footer Links 3 ====================-->
+            <!--==================== Footer Links 3 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./about.html" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link">Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./contact.html" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 3 ====================-->
 
-          <!--==================== Footer Links 4 ====================-->
-          <div class="footer__links">
-            <h4>Contact</h4>
-            <ul>
-              <li>Email: info@group26consult.com</li>
-              <li>Phone: 15920168</li>
-              <li>
-                Location: 3rd Floor, 86-90 Paul Street, London, England, United
-                Kingdom, EC2A 4NE
-              </li>
-            </ul>
+            <!--==================== Footer Links 4 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Contact</h4>
+              <ul class="footer__list">
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-envelope"></i>
+                  <span>office@aftermath-marketing.com</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+1 (678) 995 6174</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fa-solid fa-headset"></i>
+                  <span>Available 24/7</span>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 4 ====================-->
           </div>
-          <!--==================== End of Footer Links 4 ====================-->
+          <!--==================== End of Footer Grid ====================-->
         </div>
-        <!--==================== End of Footer Grid ====================-->
-
-        <!--==================== Copyright ====================-->
-        <div class="copyright">
-          © 2025 GROUP26 Consult. All rights reserved.
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <!--==================== Copyright ====================-->
+          <div class="copyright">
+            <div class="copyright__text">
+              © 2025 Aftermath Marketing. All rights reserved.
+            </div>
+          </div>
+          <!--==================== End of Copyright ====================-->
         </div>
-        <!--==================== End of Copyright ====================-->
       </div>
     </footer>
     <!--==================== End of Footer ====================-->
@@ -456,8 +761,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!--==================== End of Animate On Scroll Script Link ====================-->
 
-    <!--==================== Main Scrip Link ====================-->
-    <script src="./assets/js/main.js"></script>
-    <!--==================== End of Main Scrip Link ====================-->
+    <!--==================== Main Script Link ====================-->
+    <script src="./assets/js/main2.js"></script>
+    <script src="./assets/js/about.js"></script>
+    <!--==================== End of Main Script Link ====================-->
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROUP26 Consult | Our Services</title>
+    <title>Aftermath Marketing | Our Services</title>
 
     <!--==================== Favicon ====================-->
     <link href="./assets/img/logo.jpg" rel="icon" />
@@ -11,494 +11,644 @@
 
     <!--==================== Icons Link ====================-->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!--==================== End of Icons Link ====================-->
 
     <!--==================== Animate On Scroll Link ====================-->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <!--==================== End of Animate On Scroll Link ====================-->
 
-    <!--==================== StyleSheet Links ====================-->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!--==================== StyleSheet Link ====================-->
+    <link rel="stylesheet" href="./assets/css/main2.css" />
     <link rel="stylesheet" href="./assets/css/services.css" />
-    <!--==================== End of StyleSheet Links ====================-->
+    <!--==================== End of StyleSheet Link ====================-->
+
+    <!--==================== Google tag (gtag.js) ====================-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-16Q8BKGHTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-16Q8BKGHTH");
+    </script>
+    <!--==================== End of Google tag (gtag.js) ====================-->
   </head>
   <body>
     <!--==================== Navigation Bar ====================-->
     <nav class="navbar">
-      <div class="container nav__container flex__center">
-        <a href="./index.html" class="logo__link">
+      <div class="container navbar__container flex__center">
+        <a href="./index.html" class="navbar__logo-link">
           <img
-            class="logo"
+            class="navbar__logo"
             alt="Aftermath Marketing"
             src="./assets/img/logo2.png"
           />
         </a>
-
-        <div class="nav__links flex" id="navMenu">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./services.html" class="active">Services</a>
+        <div class="navbar__links flex" id="navMenu">
+          <a href="./index.html" class="navbar__link">Home</a>
+          <a href="./about.html" class="navbar__link">About</a>
+          <a href="./services.html" class="navbar__link navbar__link--active"
+            >Services</a
+          >
           <a href="./blog.html" class="navbar__link">Blog</a>
-          <a href="./contact.html">Contact</a>
+          <a href="./contact.html" class="navbar__link">Contact</a>
         </div>
-
-        <div class="nav__toggle" id="navToggle">
-          <i class="fas fa-bars"></i>
+        <div class="navbar__cta">
+          <div class="navbar__toggle" id="navToggle">
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+          </div>
         </div>
       </div>
     </nav>
     <!--==================== End of Navigation Bar ====================-->
 
     <!--==================== Hero Section ====================-->
-    <section class="services__hero hero flex__center" id="home">
-      <div class="container hero__content flex__center">
-        <div class="hero__text" data-aos="fade-up">
-          <h1>Connecting You with Pre-Qualified Leads to Grow Your Business</h1>
-          <p>
-            At Group26 Consult, we specialize in generating high-value leads for
-            disaster recovery and home service businesses. From core services
-            like debris removal to additional offerings like website creation
-            and marketing, we provide everything you need to succeed.
-          </p>
-          <div class="cta__buttons">
-            <a href="#contact" class="btn btn__primary"
-              >Schedule Your Free Consultation →</a
-            >
+    <section class="services-hero" id="home">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container services-hero__container">
+        <div class="services-hero__content" data-aos="fade-up">
+          <div class="services-hero__text-wrapper">
+            <div class="section__badge">
+              <span>Growth Solutions</span>
+            </div>
+            <h1>Your Partners in Smart, Sustainable Growth</h1>
+            <p>
+              At Aftermath Marketing, we partner closely with disaster recovery
+              and home-service businesses to overcome common growth barriers. We
+              know the real challenges you face: complex operations, intense
+              competition, and difficulty managing resources effectively. Our
+              comprehensive, AI-powered solutions simplify these challenges,
+              enhancing your efficiency, profitability, and competitive edge.
+            </p>
+            <div class="services-hero__cta">
+              <a href="#cta" class="btn btn__primary">
+                <span>Schedule Your Free Consultation</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="services-hero__visual">
+            <div class="visual__image">
+              <img
+                src="./assets/img/services/services5.jpg"
+                alt="Smart Growth Solutions"
+              />
+              <div class="visual__overlay"></div>
+            </div>
+            <div class="tech-particle tech-particle__1">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="tech-particle tech-particle__2">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="tech-particle tech-particle__3">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="tech-particle tech-particle__4">
+              <i class="fas fa-brain"></i>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Hero Section ====================-->
 
-    <!--==================== Disaster Recovery Services Section ====================-->
-    <section class="disaster__recovery parallax">
+    <!--==================== AI Growth Section ====================-->
+    <section class="ai-growth" id="ai-growth">
       <div class="container">
+        <!--==================== Section Title ====================-->
         <div class="section__title" data-aos="fade-up">
-          <h2>Disaster Recovery Services</h2>
-          <p>Reaching Clients When They Need You Most</p>
+          <div class="section__badge">AI-Powered Business Growth</div>
+          <h2>Streamlined Operations & Smart Decision-Making</h2>
+          <div class="section__title-line"></div>
         </div>
+        <!--==================== End of Section Title ====================-->
 
-        <!--==================== Services Grid ====================-->
-        <div class="services__grid grid">
-          <!--==================== Service Card 1 ====================-->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="service__card flex"
-          >
-            <div class="card__image">
-              <img
-                alt="Debris Removal"
-                src="./assets/img/services/services.jpg"
-              />
-            </div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-trash-restore"></i>
+        <!--==================== AI Growth Content ====================-->
+        <div class="ai-growth__content" data-aos="fade-up" data-aos-delay="200">
+          <div class="ai-growth__description">
+            <p>
+              Our AI-driven growth solutions are designed to simplify and
+              accelerate your business operations. By automating routine tasks,
+              providing real-time insights, and forecasting market trends, we
+              help your business operate smoothly and grow sustainably.
+            </p>
+          </div>
+
+          <div class="ai-growth__showcase">
+            <div class="ai-growth__visual" data-aos="fade-right">
+              <div class="visual__container">
+                <img
+                  alt="AI-Powered Growth Solutions"
+                  src="./assets/img/services/services2.jpg"
+                />
+                <div class="visual__overlay"></div>
               </div>
-              <h3>Debris Removal</h3>
-              <p>
-                Quickly connect with property owners needing fast, reliable
-                debris cleanup to prepare for rebuilding.
-              </p>
-              <a href="#contact" class="service__cta"
-                >Get Debris Removal Leads Now →</a
+              <div class="image__shape"></div>
+            </div>
+
+            <div class="ai-growth__features" data-aos="fade-left">
+              <div
+                class="feature__item"
+                data-aos="fade-up"
+                data-aos-delay="100"
               >
+                <div class="feature__icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <div class="feature__content">
+                  <h3>Smart Automation</h3>
+                  <p>
+                    Eliminate manual processes, streamline lead management,
+                    client interactions, and everyday administrative tasks.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="feature__item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="feature__icon">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="feature__content">
+                  <h3>Predictive Analytics</h3>
+                  <p>
+                    Make informed decisions using real-time data and predictive
+                    insights, helping you anticipate opportunities and market
+                    changes.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="feature__item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="feature__icon">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <div class="feature__content">
+                  <h3>Operational Scalability</h3>
+                  <p>
+                    Grow effortlessly with systems that adapt to your evolving
+                    business needs, avoiding common growth pains and
+                    bottlenecks.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature__cta">
+                <a href="#cta" class="btn btn__primary">
+                  <span>Discover How Our AI Can Help</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <!--==================== End of Service Card 1 ====================-->
+        </div>
+        <!--==================== End of AI Growth Content ====================-->
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of AI Growth Section ====================-->
 
-          <!--==================== Service Card 2 ====================-->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            class="service__card flex"
-          >
-            <div class="card__image">
-              <img
-                alt="Tree Clearing"
-                src="./assets/img/services/services6.jpg"
-              />
-            </div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-tree"></i>
+    <!--==================== Growth Support Section ====================-->
+    <section class="growth-support" id="growth-support">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container">
+        <!--==================== Section Title ====================-->
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Comprehensive Growth Support</div>
+          <h2>Beyond Traditional Marketing</h2>
+          <div class="section__title-line"></div>
+        </div>
+        <!--==================== End of Section Title ====================-->
+
+        <!--==================== Growth Support Content ====================-->
+        <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="growth-support__content"
+        >
+          <div class="growth-support__description">
+            <p>
+              Our approach moves beyond traditional marketing services,
+              providing practical solutions designed specifically for your
+              business needs:
+            </p>
+          </div>
+
+          <div class="growth-support__services">
+            <div class="service__card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card__glass-effect"></div>
+              <div class="service__icon">
+                <i class="fas fa-laptop-code"></i>
               </div>
-              <h3>Tree Clearing</h3>
+              <h3>Website Design & Optimization</h3>
               <p>
-                Exclusive leads for tree cutting, trimming, and vegetation
-                clearing after storms or fires.
+                Enhance your online presence with websites designed to attract
+                and convert more visitors into paying clients.
               </p>
-              <a href="#contact" class="service__cta"
-                >Start Receiving Tree Clearing Leads →</a
-              >
+            </div>
+
+            <div class="service__card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card__glass-effect"></div>
+              <div class="service__icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Google Business Profile Optimization</h3>
+              <p>
+                Improve your local search visibility, ensuring potential clients
+                easily find your business.
+              </p>
+            </div>
+
+            <div class="service__card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card__glass-effect"></div>
+              <div class="service__icon">
+                <i class="fas fa-hashtag"></i>
+              </div>
+              <h3>Social Media Marketing</h3>
+              <p>
+                Engage your audience effectively with customized, targeted
+                social media campaigns.
+              </p>
+            </div>
+
+            <div class="service__card" data-aos="fade-up" data-aos-delay="400">
+              <div class="card__glass-effect"></div>
+              <div class="service__icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h3>Search Engine Optimization (SEO)</h3>
+              <p>
+                Implement effective SEO strategies to sustainably increase your
+                visibility online.
+              </p>
+            </div>
+
+            <div class="service__card" data-aos="fade-up" data-aos-delay="500">
+              <div class="card__glass-effect"></div>
+              <div class="service__icon">
+                <i class="fas fa-ad"></i>
+              </div>
+              <h3>Google Ads Management</h3>
+              <p>
+                Drive immediate traffic with expertly managed, targeted
+                advertising campaigns that deliver measurable results.
+              </p>
             </div>
           </div>
-          <!--==================== End of Service Card 2 ====================-->
 
-          <!--==================== Service Card 3 ====================-->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            class="service__card flex"
-          >
-            <div class="card__image">
+          <div class="growth-support__cta" data-aos="fade-up">
+            <a href="#cta" class="btn btn__primary">
+              <span>Request Your Free Marketing Assessment</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!--==================== End of Growth Support Content ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--==================== End of Growth Support Section ====================-->
+
+    <!--==================== Why Choose Section ====================-->
+    <section class="why-choose" id="why-choose">
+      <div class="container">
+        <!--==================== Section Title ====================-->
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Why Choose Us</div>
+          <h2>Why Choose Aftermath Marketing?</h2>
+          <div class="section__title-line"></div>
+        </div>
+        <!--==================== End of Section Title ====================-->
+
+        <!--==================== Why Choose Content ====================-->
+        <div
+          class="why-choose__content"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="why-choose__visual" data-aos="fade-right">
+            <div class="visual__container">
               <img
-                alt="Water Damage Restoration"
                 src="./assets/img/services/services7.webp"
+                alt="Why Choose Aftermath Marketing"
               />
+              <div class="visual__overlay"></div>
             </div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-water"></i>
-              </div>
-              <h3>Water Damage Repairs</h3>
-              <p>
-                Find clients who need immediate water extraction, drying, and
-                mold remediation after floods or leaks.
-              </p>
-              <a href="#contact" class="service__cta"
-                >Find Water Damage Leads Today →</a
-              >
-            </div>
+            <div class="image__shape"></div>
           </div>
-          <!--==================== End of Service Card 3 ====================-->
 
-          <!--==================== Service Card 4 ====================-->
-          <div
-            data-aos="fade-up"
-            class="service__card flex"
-            data-aos-delay="400"
-          >
-            <div class="card__image">
-              <img
-                alt="Fire Damage Repair"
-                src="./assets/img/services/services8.webp"
-              />
-            </div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-fire"></i>
+          <div class="why-choose__benefits" data-aos="fade-left">
+            <div class="benefit__item" data-aos="fade-up" data-aos-delay="100">
+              <div class="benefit__icon">
+                <i class="fas fa-chart-line"></i>
               </div>
-              <h3>Fire Damage Repair</h3>
-              <p>
-                Connect with clients seeking fire and smoke damage restoration,
-                including structural and content recovery.
-              </p>
-              <a href="#contact" class="service__cta"
-                >Get Fire Damage Repair Leads →</a
-              >
+              <div class="benefit__content">
+                <h3>Growth-Focused Approach</h3>
+                <p>
+                  Our solutions are carefully designed to help your business
+                  grow sustainably and efficiently.
+                </p>
+              </div>
             </div>
-          </div>
-          <!--==================== End of Service Card 4 ====================-->
 
-          <!--==================== Service Card 5 ====================-->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            class="service__card flex"
-          >
-            <div class="card__image">
-              <img
-                alt="Storm Damage Repairs"
-                src="./assets/img/services/services4.jpg"
-              />
-            </div>
-            <div class="card__content">
-              <div class="card__icon flex__center">
-                <i class="fas fa-cloud-showers-heavy"></i>
+            <div class="benefit__item" data-aos="fade-up" data-aos-delay="200">
+              <div class="benefit__icon">
+                <i class="fas fa-lightbulb"></i>
               </div>
-              <h3>Storm Damage Repairs</h3>
-              <p>
-                Generate leads for roofing, siding, and structural repairs to
-                restore storm-damaged properties.
-              </p>
-              <a href="#contact" class="service__cta"
-                >Sign Up for Storm Repair Leads →</a
-              >
+              <div class="benefit__content">
+                <h3>Transparent and Simple</h3>
+                <p>
+                  Clear, straightforward strategies and pricing—no hidden
+                  surprises or unnecessary complexity.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit__item" data-aos="fade-up" data-aos-delay="300">
+              <div class="benefit__icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="benefit__content">
+                <h3>Dedicated, Expert Support</h3>
+                <p>
+                  Our team truly understands your industry and offers
+                  personalized guidance every step of the way.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit__item" data-aos="fade-up" data-aos-delay="400">
+              <div class="benefit__icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="benefit__content">
+                <h3>Proven Results</h3>
+                <p>
+                  Experience measurable improvements in efficiency,
+                  profitability, and market leadership.
+                </p>
+              </div>
             </div>
           </div>
-          <!--==================== End of Service Card 5 ====================-->
         </div>
-        <!--==================== End of Services Grid ====================-->
+        <!--==================== End of Why Choose Content ====================-->
+      </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
-    <!--==================== End of Disaster Recovery Services Section ====================-->
+    <!--==================== End of Why Choose Section ====================-->
 
-    <!--==================== Restoration Solutions Section ====================-->
-    <section class="restoration parallax">
+    <!--==================== Ready Section ====================-->
+    <section class="ready" id="ready">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
       <div class="container">
-        <div class="section__title light" data-aos="fade-up">
-          <h2>Restoration Solutions</h2>
-          <p>Helping Businesses Rebuild Communities</p>
+        <!--==================== Ready Content ====================-->
+        <div class="ready__content" data-aos="fade-up">
+          <div class="ready__badge">
+            <i class="fas fa-rocket"></i>
+            <span>Ready to Grow?</span>
+          </div>
+          <h2>Ready for Real, Lasting Growth?</h2>
+          <p class="ready__text">
+            Join numerous businesses that trust Aftermath Marketing as their
+            strategic growth partner. With innovative AI solutions and
+            personalized strategies, we help simplify operations, drive
+            profitability, and enhance your competitive edge.
+          </p>
+          <p class="ready__emphasis">
+            Start your journey toward smarter growth today.
+          </p>
+          <div class="ready__cta">
+            <a href="#cta" class="btn btn__primary">
+              <span>Schedule Your Free Consultation Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-
-        <!--==================== Restoration Grid ====================-->
-        <div class="restoration__grid grid">
-          <!--==================== Solution Card 1 ====================-->
-          <div class="solution__card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card__icon flex__center">
-              <i class="fas fa-building"></i>
-            </div>
-            <h3>Structural Repairs</h3>
-            <p>
-              Leads for contractors rebuilding damaged homes and commercial
-              properties.
-            </p>
-            <a href="#contact" class="btn btn__secondary"
-              >Get Structural Repair Leads</a
-            >
-          </div>
-          <!--==================== End of Solution Card 1 ====================-->
-
-          <!--==================== Solution Card 2 ====================-->
-          <div class="solution__card" data-aos="fade-up" data-aos-delay="200">
-            <div class="card__icon flex__center">
-              <i class="fas fa-box-open"></i>
-            </div>
-            <h3>Content Restoration</h3>
-            <p>
-              Connect with clients who need help recovering and restoring
-              personal belongings after a disaster.
-            </p>
-            <a href="#contact" class="btn btn__secondary"
-              >Find Content Restoration Clients</a
-            >
-          </div>
-          <!--==================== End of Solution Card 2 ====================-->
-
-          <!--==================== Solution Card 3 ====================-->
-          <div class="solution__card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card__icon flex__center">
-              <i class="fas fa-exclamation-triangle"></i>
-            </div>
-            <h3>Hazard Removal</h3>
-            <p>
-              Safe, compliant lead delivery for businesses specializing in the
-              removal of dangerous materials.
-            </p>
-            <a href="#contact" class="btn btn__secondary"
-              >Get Hazard Removal Leads</a
-            >
-          </div>
-          <!--==================== End of Solution Card 3 ====================-->
-        </div>
-        <!--==================== End of Restoration Grid ====================-->
+        <!--==================== End of Ready Content ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
-    <!--==================== Restoration Solutions Section ====================-->
-
-    <!--==================== Marketing Services Section ====================-->
-    <section class="marketing">
-      <div class="container">
-        <div class="section__title" data-aos="fade-up">
-          <h2>Marketing and Business Growth Services</h2>
-          <p>Beyond Leads: Growing Your Business in Every Way</p>
-        </div>
-
-        <!--==================== Marketing Grid ====================-->
-        <div class="marketing__grid grid">
-          <!--==================== Marketing Card 1 ====================-->
-          <div class="marketing__card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card__icon flex__center">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Website Design and Optimization</h3>
-            <p>
-              Build or upgrade your website to convert more leads into paying
-              clients.
-            </p>
-            <a href="#contact" class="marketing__cta"
-              >Request a Free Website Audit →</a
-            >
-          </div>
-          <!--==================== End of Marketing Card 1 ====================-->
-
-          <!--==================== Marketing Card 2 ====================-->
-          <div class="marketing__card" data-aos="fade-up" data-aos-delay="200">
-            <div class="card__icon flex__center">
-              <i class="fab fa-google"></i>
-            </div>
-            <h3>Google Business Profile Setup</h3>
-            <p>
-              Ensure your business ranks higher in local searches with a fully
-              optimized profile.
-            </p>
-            <a href="#contact" class="marketing__cta"
-              >Boost Your Google Rankings →</a
-            >
-          </div>
-          <!--==================== End of Marketing Card 2 ====================-->
-
-          <!--==================== Marketing Card 3 ====================-->
-          <div class="marketing__card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card__icon flex__center">
-              <i class="fas fa-share-alt"></i>
-            </div>
-            <h3>Social Media Marketing</h3>
-            <p>
-              Targeted campaigns to increase visibility and drive traffic to
-              your services.
-            </p>
-            <a href="#contact" class="marketing__cta"
-              >Let's Grow Your Social Presence →</a
-            >
-          </div>
-          <!--==================== End of Marketing Card 3 ====================-->
-
-          <!--==================== Marketing Card 4 ====================-->
-          <div class="marketing__card" data-aos="fade-up" data-aos-delay="400">
-            <div class="card__icon flex__center">
-              <i class="fas fa-search"></i>
-            </div>
-            <h3>Search Engine Optimization (SEO)</h3>
-            <p>
-              Long-term strategies to ensure your business ranks higher on
-              Google for key search terms.
-            </p>
-            <a href="#contact" class="marketing__cta"
-              >Start Improving Your SEO Today →</a
-            >
-          </div>
-          <!--==================== End of Marketing Card 4 ====================-->
-
-          <!--==================== Marketing Card 5 ====================-->
-          <div class="marketing__card" data-aos="fade-up" data-aos-delay="500">
-            <div class="card__icon flex__center">
-              <i class="fas fa-ad"></i>
-            </div>
-            <h3>Google Ads Management</h3>
-            <p>
-              Expert management of paid ad campaigns to drive immediate traffic
-              to your business.
-            </p>
-            <a href="#contact" class="marketing__cta"
-              >Get Started with Google Ads →</a
-            >
-          </div>
-          <!--==================== End of Marketing Card 5 ====================-->
-        </div>
-        <!--==================== End of Marketing Grid ====================-->
-      </div>
-    </section>
-    <!--==================== End of Marketing Services Section ====================-->
-
-    <!--==================== Call to Action Section ====================-->
-    <section class="cta">
-      <div class="container">
-        <!--==================== CTA Content ====================-->
-        <div class="cta__content flex__center">
-          <div class="cta__left" data-aos="fade-right">
-            <p class="cta__overline">Ready to Transform?</p>
-            <h2>Let's Rebuild Communities Together</h2>
-            <p class="cta__description">
-              Join forces with the leading disaster recovery lead generation
-              experts. Your success story starts here.
-            </p>
-            <div class="cta__stats flex">
-              <div class="mini__stat">
-                <h4>500+</h4>
-                <p>Projects Completed</p>
-              </div>
-              <div class="mini__stat">
-                <h4>98%</h4>
-                <p>Client Satisfaction</p>
-              </div>
-            </div>
-          </div>
-          <!--==================== End of CTA Content ====================-->
-
-          <!--==================== CTA Right ====================-->
-          <div class="cta__right" data-aos="fade-left">
-            <div class="cta__card">
-              <div class="card__icon flex__center flex__center">
-                <i class="fas fa-rocket"></i>
-              </div>
-              <h3>Start Your Journey</h3>
-              <p>Schedule a free consultation with our experts</p>
-              <a href="./contact.html" class="btn btn__primary"
-                >Get Started →</a
-              >
-            </div>
-          </div>
-          <!--==================== End of CTA Right ====================-->
-        </div>
-        <!--==================== End of CTA Content ====================-->
-      </div>
-    </section>
-    <!--==================== End of Call to Action Section ====================-->
+    <!--==================== End of Ready Section ====================-->
 
     <!--==================== Footer ====================-->
-    <footer>
-      <div class="container">
-        <!--==================== Footer Grid ====================-->
-        <div class="footer__grid">
-          <!--==================== Footer Links 1 ====================-->
-          <div class="footer__links">
-            <a href="./index.html" class="logo__link">
-              <img
-                class="logo footer__logo"
-                alt="Aftermath Marketing"
-                src="./assets/img/logo.jpg"
-              />
-            </a>
-            <p>
-              Connecting disaster-affected communities with reliable recovery
-              services through strategic lead generation.
-            </p>
-          </div>
-          <!--==================== End of Footer Links 1 ====================-->
+    <footer class="footer">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="footer__top">
+        <div class="container">
+          <!--==================== Footer Grid ====================-->
+          <div class="footer__grid">
+            <!--==================== Footer Links 1 ====================-->
+            <div class="footer__links">
+              <a href="./index.html" class="footer__logo-link">
+                <img
+                  class="footer__logo"
+                  alt="Aftermath Marketing"
+                  src="./assets/img/logo.jpg"
+                />
+              </a>
+              <p class="footer__description">
+                Connecting home-service businesses with growth opportunities
+                through AI-powered lead generation and operational solutions.
+              </p>
+              <div class="footer__social">
+                <a href="#" class="social__link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== End of Footer Links 1 ====================-->
 
-          <!--==================== Footer Links 2 ====================-->
-          <div class="footer__links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">Debris Removal</a></li>
-              <li><a href="#services">Hazmat Cleanup</a></li>
-              <li><a href="#services">Tree Clearing</a></li>
-              <li><a href="#services">Soil Remediation</a></li>
-            </ul>
-          </div>
-          <!--==================== End of Footer Links 2 ====================-->
+            <!--==================== Footer Links 2 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Services</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#ai-growth" class="footer__link"
+                    >AI-Powered Growth</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#growth-support" class="footer__link"
+                    >Website Design</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#growth-support" class="footer__link"
+                    >SEO Services</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#growth-support" class="footer__link">Google Ads</a>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 2 ====================-->
 
-          <!--==================== Footer Links 3 ====================-->
-          <div class="footer__links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About Us</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!--==================== End of Footer Links 3 ====================-->
+            <!--==================== Footer Links 3 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./about.html" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link">Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./contact.html" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 3 ====================-->
 
-          <!--==================== Footer Links 4 ====================-->
-          <div class="footer__links">
-            <h4>Contact</h4>
-            <ul>
-              <li>Email: info@group26consult.com</li>
-              <li>Phone: 15920168</li>
-              <li>
-                Location: 3rd Floor, 86-90 Paul Street, London, England, United
-                Kingdom, EC2A 4NE
-              </li>
-            </ul>
+            <!--==================== Footer Links 4 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Contact</h4>
+              <ul class="footer__list">
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-envelope"></i>
+                  <span>office@aftermath-marketing.com</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+1 (678) 995 6174</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fa-solid fa-headset"></i>
+                  <span>Available 24/7</span>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 4 ====================-->
           </div>
-          <!--==================== End of Footer Links 4 ====================-->
+          <!--==================== End of Footer Grid ====================-->
         </div>
-        <!--==================== End of Footer Grid ====================-->
-
-        <!--==================== Copyright ====================-->
-        <div class="copyright">
-          © 2025 GROUP26 Consult. All rights reserved.
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <!--==================== Copyright ====================-->
+          <div class="copyright">
+            <div class="copyright__text">
+              © 2025 Aftermath Marketing. All rights reserved.
+            </div>
+          </div>
+          <!--==================== End of Copyright ====================-->
         </div>
-        <!--==================== End of Copyright ====================-->
       </div>
     </footer>
     <!--==================== End of Footer ====================-->
@@ -507,8 +657,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!--==================== End of Animate On Scroll Script Link ====================-->
 
-    <!--==================== Main Scrip Link ====================-->
-    <script src="./assets/js/main.js"></script>
-    <!--==================== End of Main Scrip Link ====================-->
+    <!--==================== Main Script Link ====================-->
+    <script src="./assets/js/main2.js"></script>
+    <script src="./assets/js/services.js"></script>
+    <!--==================== End of Main Script Link ====================-->
   </body>
 </html>
