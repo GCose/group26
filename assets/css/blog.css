@@ -1,9 +1,9 @@
-/**===============================
-* Website Name: Aftermath Blog
+/**=======================================
+* Website Name: Group26 Consult - Blog
 * Created: March 19, 2025
 * Last Updated: March 19, 2025
 * Author: Goodness Adewuyi
-===============================*/
+=======================================*/
 
 /**==================
  * BLOG HERO STYLES
@@ -14,6 +14,10 @@
     color: var(--white);
     background: var(--dark-bg);
     padding: clamp(120px, 15vh, 160px) 0 clamp(80px, 10vh, 120px);
+}
+
+.blog__hero .section__badge{
+    color: var(--success);
 }
 
 .blog__hero-content {

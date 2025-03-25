@@ -1,5 +1,5 @@
 /**===================================================
-* Website Name: Aftermath Blog Post
+* Website Name: Group26 Consult - Blog Post
 * Created: March 19, 2025
 * Last Updated: March 19, 2025
 * Author: Goodness Adewuyi
@@ -14,6 +14,10 @@
     color: var(--white);
     background: var(--dark-bg);
     padding: clamp(120px, 15vh, 160px) 0 clamp(60px, 8vh, 100px);
+}
+
+.post-header .section__badge {
+    color: var(--success);
 }
 
 .post-header__content {
