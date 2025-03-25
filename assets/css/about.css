@@ -264,6 +264,10 @@
     background: var(--dark-bg);
 }
 
+.commitment .section__badge {
+    color: var(--success);
+}
+
 .commitment__content {
     gap: 4rem;
     display: grid;
@@ -461,6 +465,10 @@
 .experience {
     color: var(--white);
     background: var(--dark-bg);
+}
+
+.experience .section__badge{
+    color: var(--success);
 }
 
 .experience__content {

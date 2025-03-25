@@ -16,6 +16,10 @@
     background: var(--dark-bg);
 }
 
+.services-hero .section__badge {
+    color: var(--success);
+}
+
 .services-hero__container {
     z-index: 2;
     position: relative;
@@ -381,6 +385,10 @@
 .growth-support {
     color: var(--white);
     background: var(--dark-bg);
+}
+
+.growth-support .section__badge {
+    color: var(--success);
 }
 
 .growth-support .section__title h2 {

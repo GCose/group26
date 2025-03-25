@@ -16,6 +16,10 @@
     background: var(--dark-bg);
 }
 
+.contact-hero .section__badge{
+    color: var(--success);
+}
+
 .contact-hero__container {
     z-index: 2;
     position: relative;
