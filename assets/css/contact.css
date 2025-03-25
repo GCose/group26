@@ -1,123 +1,166 @@
-/**========================
- * CONTACT SECTION STYLES
- ========================*/
-.contact {
-    padding: 8rem 0;
+/**===================================================
+* Website Name: Group26Consult - Contact Page Styles
+* Created: March 25, 2025
+* Last Updated: March 25, 2025
+* Author: Goodness Adewuyi
+===================================================*/
+
+/**=========================
+ * CONTACT HERO STYLES
+ =========================*/
+.contact-hero {
     overflow: hidden;
     position: relative;
-    background: var(--white);
+    color: var(--white);
+    padding: 130px 0 100px;
+    background: var(--dark-bg);
 }
 
-/**=================
- * HERO STYLES
- =================*/
-.contact__hero {
-    height: 75vh;
+.contact-hero__container {
+    z-index: 2;
+    position: relative;
 }
 
-.contact__hero.hero::before {
-    animation: none;
-    background: url('/assets/img/contact.webp') center/cover;
+.contact-hero__content {
+    z-index: 2;
+    position: relative;
 }
 
-/*========== Background Shapes ==========*/
-.contact__shapes .shape {
-    z-index: 0;
-    opacity: 0.1;
-    position: absolute;
-    filter: blur(60px);
-    border-radius: 50px;
-    background: var(--gradient);
+.contact-hero__text-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.shape-1 {
-    top: -100px;
-    width: 400px;
-    right: -100px;
-    height: 400px;
-    transform: rotate(-45deg);
+.contact-hero__text-wrapper h1 {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background-clip: text;
+    text-shadow: var(--text-shadow);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    background: linear-gradient(90deg, #FFFFFF, #E0E9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.shape-2 {
-    left: -150px;
-    width: 500px;
-    height: 500px;
-    bottom: -150px;
-    transform: rotate(30deg);
+.contact-hero__text-wrapper p {
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
-.shape-3 {
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -50%);
+/**=====================
+ * BREAKPOINT STYLES
+ =====================*/
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 120px 0 80px;
+    }
 }
 
-/*========== Contact Content ==========*/
+/**=============================
+ * CONTACT SECTION STYLES
+ =============================*/
+.contact-section {
+    padding: 6rem 0;
+    position: relative;
+    background: var(--background);
+}
+
 .contact__content {
     gap: 4rem;
-    z-index: 1;
     display: grid;
-    position: relative;
+    margin-top: 3rem;
     grid-template-columns: 1fr 1.2fr;
 }
 
-/*========== Contact Info ==========*/
-.section__title.left {
-    text-align: left;
+/**======================
+ * CONTACT INFO STYLES
+ ======================*/
+.contact__info {
+    position: relative;
 }
 
-.contact__details {
-    gap: 2rem;
+.info__intro {
+    margin-bottom: 2.5rem;
+}
+
+.info__intro h3 {
+    margin-bottom: 1rem;
+    color: var(--gray-900);
+    font-size: clamp(1.5rem, 2vw, 1.75rem);
+}
+
+.info__intro p {
+    line-height: 1.7;
+    color: var(--gray-600);
+    font-size: clamp(0.95rem, 1.25vw, 1.1rem);
+}
+
+.info__details {
+    gap: 1.5rem;
     display: flex;
-    margin-top: 3rem;
     flex-direction: column;
 }
 
-.contact__item {
+.info__item {
     gap: 1.5rem;
     display: flex;
     padding: 1.5rem;
     align-items: center;
-    border-radius: 16px;
-    background: var(--white);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--border-radius-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact__item:hover {
+.info__item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
+    border-color: rgba(0, 80, 224, 0.1);
 }
 
 .item__icon {
     width: 50px;
     height: 50px;
     display: flex;
-    font-size: 1.2rem;
-    align-items: center;
+    flex-shrink: 0;
+    font-size: 1.25rem;
     border-radius: 12px;
+    align-items: center;
     color: var(--white);
     justify-content: center;
     background: var(--gradient);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 80, 224, 0.15);
+}
+
+.info__item:hover .item__icon {
+    transform: rotate(-10deg);
 }
 
 .item__content h4 {
-    color: var(--gray-800);
-    margin-bottom: 0.25rem;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.1rem, 1.5vw, 1.25rem);
 }
 
 .item__content p {
+    line-height: 1.5;
     color: var(--gray-600);
+    font-size: clamp(0.9rem, 1.25vw, 1rem);
 }
 
-/*========== Contact Form ==========*/
+/**=============================
+ * CONTACT FORM STYLES
+ =============================*/
 .contact__form {
-    padding: 3rem;
-    border-radius: 20px;
+    padding: 2.5rem;
     background: var(--white);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--border-radius);
 }
 
 .form__header {
@@ -125,18 +168,69 @@
     margin-bottom: 2rem;
 }
 
-.form__header h3 {
+.header__icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
     font-size: 1.5rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+    position: relative;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: var(--white);
+    justify-content: center;
+    background: var(--gradient);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 80, 224, 0.15);
 }
 
-/**====================
+.icon__glow {
+    opacity: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    filter: blur(15px);
+    background: var(--gradient);
+    transition: var(--transition);
+}
+
+.header__icon:hover {
+    transform: rotate(-10deg);
+}
+
+.header__icon:hover .icon__glow {
+    opacity: 0.5;
+}
+
+.form__header h3 {
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+}
+
+.form__header p {
+    color: var(--gray-600);
+    font-size: clamp(0.9rem, 1.25vw, 1rem);
+}
+
+.form__container {
+    position: relative;
+}
+
+/**=====================
  * BREAKPOINT STYLES
- ====================*/
-@media (max-width: 992px) {
+ =====================*/
+@media (max-width: 991px) {
     .contact__content {
+        gap: 3rem;
         grid-template-columns: 1fr;
+    }
+
+    .contact__form {
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
 
@@ -144,11 +238,8 @@
     .contact__form {
         padding: 2rem;
     }
-}
 
-/**===============
- * FOOTER STYLES
- ===============*/
-.contact__footer {
-    border-radius: 40px 40px 0 0;
+    .info__item {
+        padding: 1.25rem;
+    }
 }

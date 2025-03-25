@@ -1,5 +1,5 @@
 /**===================================================
-* Website Name: Aftermath - Services Page Scripts
+* Website Name: Group26Consult - Services Page
 * Created: March 25, 2025
 * Last Updated: March 25, 2025
 * Author: Goodness Adewuyi

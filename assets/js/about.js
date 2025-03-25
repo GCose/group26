@@ -1,8 +1,8 @@
 /**===================================================
-* Website Name: Aftermath - About Page
+* Website Name: Group26Consult - About Page
 * Created: March 25, 2025
 * Last Updated: March 25, 2025
-* Author: Goodness Adewuyo
+* Author: Goodness Adewuyi
 ===================================================*/
 
 /**==============================

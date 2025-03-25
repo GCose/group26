@@ -1,9 +1,9 @@
-/**===================================================
-* Website Name: Aftermath - About Page Styles
+/**============================================
+* Website Name: Group26Consult - About Page
 * Created: March 25, 2025
 * Last Updated: March 25, 2025
 * Author: Goodness Adewuyi
-===================================================*/
+============================================*/
 
 /**==================
  * ABOUT HERO STYLES
@@ -467,7 +467,7 @@
     text-align: center;
 }
 
-.experience .section__title h2{
+.experience .section__title h2 {
     color: var(--gray-200)
 }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROUP26 Consult | Contact Us</title>
+    <title>Aftermath Marketing | Contact Us</title>
 
     <!--==================== Favicon ====================-->
     <link href="./assets/img/logo.jpg" rel="icon" />
@@ -11,140 +11,183 @@
 
     <!--==================== Icons Link ====================-->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!--==================== End of Icons Link ====================-->
 
     <!--==================== Animate On Scroll Link ====================-->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <!--==================== End of Animate On Scroll Link ====================-->
 
-    <!--==================== StyleSheet Links ====================-->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!--==================== StyleSheet Link ====================-->
+    <link rel="stylesheet" href="./assets/css/main2.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
-    <!--==================== End of StyleSheet Links ====================-->
+    <!--==================== End of StyleSheet Link ====================-->
+
+    <!--==================== Google tag (gtag.js) ====================-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-16Q8BKGHTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-16Q8BKGHTH");
+    </script>
+    <!--==================== End of Google tag (gtag.js) ====================-->
   </head>
   <body>
     <!--==================== Navigation Bar ====================-->
     <nav class="navbar">
-      <div class="container nav__container flex__center">
-        <a href="./index.html" class="logo__link">
+      <div class="container navbar__container flex__center">
+        <a href="./index.html" class="navbar__logo-link">
           <img
-            class="logo"
+            class="navbar__logo"
             alt="Aftermath Marketing"
             src="./assets/img/logo2.png"
           />
         </a>
-
-        <div class="nav__links flex" id="navMenu">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./services.html">Services</a>
+        <div class="navbar__links flex" id="navMenu">
+          <a href="./index.html" class="navbar__link">Home</a>
+          <a href="./about.html" class="navbar__link">About</a>
+          <a href="./services.html" class="navbar__link">Services</a>
           <a href="./blog.html" class="navbar__link">Blog</a>
-          <a href="./contact.html" class="active">Contact</a>
+          <a href="./contact.html" class="navbar__link navbar__link--active"
+            >Contact</a
+          >
         </div>
-
-        <div class="nav__toggle" id="navToggle">
-          <i class="fas fa-bars"></i>
+        <div class="navbar__cta">
+          <div class="navbar__toggle" id="navToggle">
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+          </div>
         </div>
       </div>
     </nav>
     <!--==================== End of Navigation Bar ====================-->
 
     <!--==================== Hero Section ====================-->
-    <section class="contact__hero hero flex__center" id="home">
-      <div class="container hero__content grid">
-        <!--==================== Hero Section Info ====================-->
-        <div class="hero__text" data-aos="fade-right">
-          <h1>Let's get in touch</h1>
-          <div class="cta__buttons">
-            <a href="#contact" class="btn btn__secondary">Contact Us →</a>
+    <section class="contact-hero" id="home">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="container contact-hero__container">
+        <div class="contact-hero__content" data-aos="fade-up">
+          <div class="contact-hero__text-wrapper">
+            <div class="section__badge">
+              <span>Get In Touch</span>
+            </div>
+            <h1>Let's Connect and Grow Your Business</h1>
+            <p>
+              Ready to transform your business with our AI-powered solutions and
+              expert marketing strategies? Reach out to us today and let's start
+              a conversation about your growth needs.
+            </p>
           </div>
         </div>
-        <!--==================== End of Hero Section Info ====================-->
+      </div>
+      <div class="section__wave">
+        <svg
+          data-name="Layer 1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
     <!--==================== End of Hero Section ====================-->
 
     <!--==================== Contact Section ====================-->
-    <section class="contact" id="contact">
+    <section class="contact-section" id="contact">
       <div class="container">
-        <!--==================== Background Shapes ====================-->
-        <div class="contact__shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
+        <!--==================== Section Title ====================-->
+        <div class="section__title" data-aos="fade-up">
+          <div class="section__badge">Contact Us</div>
+          <h2>We're Here to Help You Succeed</h2>
+          <div class="section__title-line"></div>
         </div>
-        <!--==================== End of Background Shapes ====================-->
+        <!--==================== End of Section Title ====================-->
 
         <!--==================== Contact Content ====================-->
-        <div class="contact__content">
+        <div class="contact__content" data-aos="fade-up" data-aos-delay="200">
           <!--==================== Contact Info ====================-->
           <div class="contact__info" data-aos="fade-right">
-            <!--==================== Section Title ====================-->
-            <div class="section__title left">
-              <h2>Let's Connect</h2>
-              <p>Get in touch to start your recovery journey</p>
+            <div class="info__intro">
+              <h3>Contact Information</h3>
+              <p>
+                Get in touch with our team for personalized assistance with your
+                business growth needs.
+              </p>
             </div>
-            <!--==================== End of Section Title ====================-->
 
-            <!--==================== Contact Details ====================-->
-            <div class="contact__details">
-              <!--==================== Contact Item 1 ====================-->
-              <div class="contact__item">
+            <div class="info__details">
+              <div class="info__item" data-aos="fade-up" data-aos-delay="100">
                 <div class="item__icon">
-                  <i class="fas fa-phone"></i>
+                  <i class="fas fa-phone-alt"></i>
                 </div>
                 <div class="item__content">
                   <h4>Call Us</h4>
-                  <p>15920168</p>
+                  <p>+1 (678) 995 6174</p>
                 </div>
               </div>
-              <!--==================== End of Contact Item 1 ====================-->
 
-              <!--==================== Contact Item 2 ====================-->
-              <div class="contact__item">
+              <div class="info__item" data-aos="fade-up" data-aos-delay="200">
                 <div class="item__icon">
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div class="item__content">
                   <h4>Email Us</h4>
-                  <p>office@group25-consult.com</p>
+                  <p>office@aftermath-marketing.com</p>
                 </div>
               </div>
-              <!--==================== End of Contact Item 2 ====================-->
 
-              <!--==================== Contact Item 3 ====================-->
-              <div class="contact__item">
+              <div class="info__item" data-aos="fade-up" data-aos-delay="300">
                 <div class="item__icon">
-                  <i class="fas fa-clock"></i>
+                  <i class="fas fa-headset"></i>
                 </div>
                 <div class="item__content">
                   <h4>Availability</h4>
                   <p>24/7 Emergency Response</p>
                 </div>
               </div>
-              <!--==================== End of Contact Item 3 ====================-->
             </div>
-            <!--==================== End of Contact Details ====================-->
           </div>
           <!--==================== End of Contact Info ====================-->
 
           <!--==================== Contact Form ====================-->
           <div class="contact__form" data-aos="fade-left">
-            <form id="contactForm">
-              <!--==================== Form Header ====================-->
-              <div class="form__header">
-                <h3>Send us a message</h3>
-                <p>We'll get back to you within 24 hours</p>
+            <div class="form__header">
+              <div class="header__icon">
+                <i class="fas fa-paper-plane"></i>
+                <div class="icon__glow"></div>
               </div>
-              <!--==================== End of Form Header ====================-->
+              <h3>Send Us a Message</h3>
+              <p>We'll get back to you within 24 hours</p>
+            </div>
 
-              <!--==================== Embedded Hubspot Form Link ====================-->
+            <!--==================== Embedded Hubspot Form Link ====================-->
+            <div class="form__container">
               <script
                 charset="utf-8"
                 type="text/javascript"
@@ -157,81 +200,149 @@
                   region: "eu1",
                 });
               </script>
-              <!--==================== End of Embedded Hubspot Form Link ====================-->
-            </form>
+            </div>
+            <!--==================== End of Embedded Hubspot Form Link ====================-->
           </div>
           <!--==================== End of Contact Form ====================-->
         </div>
         <!--==================== End of Contact Content ====================-->
       </div>
+      <div class="section__wave section__wave--flip">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
     </section>
     <!--==================== End of Contact Section ====================-->
 
     <!--==================== Footer ====================-->
-    <footer class="contact__footer">
-      <div class="container">
-        <!--==================== Footer Grid ====================-->
-        <div class="footer__grid">
-          <!--==================== Footer Links 1 ====================-->
-          <div class="footer__links">
-            <a href="./index.html" class="logo__link">
-              <img
-                class="logo footer__logo"
-                alt="Aftermath Marketing"
-                src="./assets/img/logo.jpg"
-              />
-            </a>
-            <p>
-              Connecting disaster-affected communities with reliable recovery
-              services through strategic lead generation.
-            </p>
-          </div>
-          <!--==================== End of Footer Links 1 ====================-->
+    <footer class="footer">
+      <div class="section__bg">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+      <div class="footer__top">
+        <div class="container">
+          <!--==================== Footer Grid ====================-->
+          <div class="footer__grid">
+            <!--==================== Footer Links 1 ====================-->
+            <div class="footer__links">
+              <a href="./index.html" class="footer__logo-link">
+                <img
+                  class="footer__logo"
+                  alt="Aftermath Marketing"
+                  src="./assets/img/logo.jpg"
+                />
+              </a>
+              <p class="footer__description">
+                Connecting home-service businesses with growth opportunities
+                through AI-powered lead generation and operational solutions.
+              </p>
+              <div class="footer__social">
+                <a href="#" class="social__link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== End of Footer Links 1 ====================-->
 
-          <!--==================== Footer Links 2 ====================-->
-          <div class="footer__links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">Debris Removal</a></li>
-              <li><a href="#services">Hazmat Cleanup</a></li>
-              <li><a href="#services">Tree Clearing</a></li>
-              <li><a href="#services">Soil Remediation</a></li>
-            </ul>
-          </div>
-          <!--==================== End of Footer Links 2 ====================-->
+            <!--==================== Footer Links 2 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Services</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Debris Removal</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Tree Services</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Roofing & Repairs</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link"
+                    >Damage Restoration</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 2 ====================-->
 
-          <!--==================== Footer Links 3 ====================-->
-          <div class="footer__links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About Us</a></li>
-              <li><a href="./services.html">Services</a></li>
-            </ul>
-          </div>
-          <!--==================== End of Footer Links 3 ====================-->
+            <!--==================== Footer Links 3 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./about.html" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./services.html" class="footer__link">Services</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./contact.html" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 3 ====================-->
 
-          <!--==================== Footer Links 4 ====================-->
-          <div class="footer__links">
-            <h4>Contact</h4>
-            <ul>
-              <li>Email: info@group26consult.com</li>
-              <li>Phone: 15920168</li>
-              <li>
-                Location: 3rd Floor, 86-90 Paul Street, London, England, United
-                Kingdom, EC2A 4NE
-              </li>
-            </ul>
+            <!--==================== Footer Links 4 ====================-->
+            <div class="footer__links">
+              <h4 class="footer__title">Contact</h4>
+              <ul class="footer__list">
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-envelope"></i>
+                  <span>office@aftermath-marketing.com</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+1 (678) 995 6174</span>
+                </li>
+                <li class="footer__item footer__contact">
+                  <i class="fa-solid fa-headset"></i>
+                  <span>Available 24/7</span>
+                </li>
+              </ul>
+            </div>
+            <!--==================== End of Footer Links 4 ====================-->
           </div>
-          <!--==================== End of Footer Links 4 ====================-->
+          <!--==================== End of Footer Grid ====================-->
         </div>
-        <!--==================== End of Footer Grid ====================-->
-
-        <!--==================== Copyright ====================-->
-        <div class="copyright">
-          © 2025 GROUP26 Consult. All rights reserved.
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <!--==================== Copyright ====================-->
+          <div class="copyright">
+            <div class="copyright__text">
+              © 2025 Aftermath Marketing. All rights reserved.
+            </div>
+          </div>
+          <!--==================== End of Copyright ====================-->
         </div>
-        <!--==================== End of Copyright ====================-->
       </div>
     </footer>
     <!--==================== End of Footer ====================-->
@@ -240,18 +351,20 @@
     <script
       async
       defer
-      id="hs-script-loader"
       type="text/javascript"
+      id="hs-script-loader"
       src="//js-eu1.hs-scripts.com/145916551.js"
     ></script>
+
     <!--==================== End of HubSpot Embed Code ====================-->
 
     <!--==================== Animate On Scroll Script Link ====================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!--==================== End of Animate On Scroll Script Link ====================-->
 
-    <!--==================== Main Scrip Link ====================-->
-    <script src="./assets/js/main.js"></script>
-    <!--==================== End of Main Scrip Link ====================-->
+    <!--==================== Main Script Link ====================-->
+    <script src="./assets/js/main2.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <!--==================== End of Main Script Link ====================-->
   </body>
 </html>
