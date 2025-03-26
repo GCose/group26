@@ -54,7 +54,7 @@ function loadPostContent(postId) {
     // If post found, render it
     if (post) {
         renderPostContent(post);
-        document.title = `${post.title} | Group26 Consult Blog`;
+        document.title = `${post.title} | Group24 Consult Blog`;
 
         // Generate table of contents if post has content
         if (post.content) {
@@ -1230,7 +1230,7 @@ function renderPostContent(post) {
     }
 
     // Update page title
-    document.title = `${post.title} | Group26 Consult Blog`;
+    document.title = `${post.title} | Group24 Consult Blog`;
 }
 
 /**============================
@@ -1826,5 +1826,5 @@ function handlePostNotFound() {
     });
 
     // Update page title
-    document.title = 'Post Not Found | Group26 Consult Blog';
+    document.title = 'Post Not Found | Group24 Consult Blog';
 }

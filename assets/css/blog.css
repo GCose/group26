@@ -1,5 +1,5 @@
 /**=======================================
-* Website Name: Group26 Consult - Blog
+* Website Name: Group24 Consult - Blog
 * Created: March 19, 2025
 * Last Updated: March 19, 2025
 * Author: Goodness Adewuyi
@@ -16,7 +16,7 @@
     padding: clamp(120px, 15vh, 160px) 0 clamp(80px, 10vh, 120px);
 }
 
-.blog__hero .section__badge{
+.blog__hero .section__badge {
     color: var(--success);
 }
 
